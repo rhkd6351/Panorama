@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class UserVO {
-    private int oid; //PK, auto increment
+    private int userOid; //PK, auto increment
     private String userId;
     private String userPw;
     private String email;

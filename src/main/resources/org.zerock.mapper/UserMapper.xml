@@ -9,24 +9,24 @@
     </select>
 
     <insert id="insert">
-        insert into tbl_user(oid, user_id, user_pw, birth, email, phone, gender, auth)
+        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth)
         values (user_seq.nextval, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth})
     </insert>
 
     <insert id="insertSelectKey">
-        <selectKey keyProperty="oid" order="BEFORE" resultType ="int">
+        <selectKey keyProperty="user_oid" order="BEFORE" resultType ="int">
             select user_seq.nextval from dual
         </selectKey>
-        insert into tbl_user(oid, user_id, user_pw, birth, email, phone, gender, auth)
+        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth)
         values (#{oid}, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth})
     </insert>
 
     <select id="read" resultType="org.zerock.domain.UserVO">
-        select * from tbl_user where oid = #{oid}
+        select * from tbl_user where user_oid = #{userOid}
     </select>
 
     <delete id="delete">
-        delete from tbl_user where oid = #{oId}
+        delete from tbl_user where user_oid = #{userOId}
     </delete>
 
     <update id="update">
@@ -37,7 +37,7 @@
             phone = #{phone},
             gender = #{gender},
             authority = #{authority}
-        where oid = #{oid}
+        where user_oid = #{userOid}
     </update>
 
 </mapper>

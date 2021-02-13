@@ -10,10 +10,10 @@ public interface UserMapper {
 
     public void insert(UserVO vo);
 
-    public int delete(int oId);
+    public int delete(int userOid);
 
     public int update(UserVO vo);
 
-    public UserVO read(int oid);
+    public UserVO read(int userOid);
 
 }
