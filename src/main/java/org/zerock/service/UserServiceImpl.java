@@ -28,8 +28,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserVO get(String userId) {
-        UserVO vo = mapper.read(userId);
+    public UserVO get(int oid) {
+        UserVO vo = mapper.read(oid);
         if(vo == null){
             log.info("회원정보를 가져오지 못하였습니다.");
             return null;
@@ -39,8 +39,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean remove(String userId) {
-        if(mapper.delete(userId) == 0){
+    public boolean remove(int oid) {
+        if(mapper.delete(oid) == 0){
             log.info("회원정보 제거에 실패하였습니다.");
             return false;
         }else {

@@ -9,16 +9,24 @@
     </select>
 
     <insert id="insert">
-        INSERT INTO TBL_USER (USERID, USERPW, EMAIL, PHONENUMBER, AUTHORITY)
-        VALUES (#{userId}, #{userPw}, #{email}, #{phonenumber}, #{authority})
+        insert into tbl_user(oid, user_id, user_pw, birth, email, phone, gender, auth)
+        values (user_seq.nextval, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth})
+    </insert>
+
+    <insert id="insertSelectKey">
+        <selectKey keyProperty="oid" order="BEFORE" resultType ="int">
+            select user_seq.nextval from dual
+        </selectKey>
+        insert into tbl_user(oid, user_id, user_pw, birth, email, phone, gender, auth)
+        values (#{oid}, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth})
     </insert>
 
     <select id="read" resultType="org.zerock.domain.UserVO">
-        select * from tbl_user where USERID = #{userId}
+        select * from tbl_user where oid = #{oid}
     </select>
 
     <delete id="delete">
-        delete from tbl_user where userid = #{userId}
+        delete from tbl_user where oid = #{oId}
     </delete>
 
     <update id="update">
@@ -26,9 +34,10 @@
         set userid = #{userId},
             userpw = #{userPw},
             email = #{email},
-            phonenumber = #{phoneNumber},
+            phone = #{phone},
+            gender = #{gender},
             authority = #{authority}
-        where userid = #{userId}
+        where oid = #{oid}
     </update>
 
 </mapper>

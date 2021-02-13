@@ -8,9 +8,9 @@ public interface UserService {
 
     public void register(UserVO vo);
 
-    public UserVO get(String userId);
+    public UserVO get(int oid);
 
-    public boolean remove(String userId);
+    public boolean remove(int oid);
 
     public boolean modify(UserVO vo);
 
