@@ -15,11 +15,12 @@ crossorigin="anonymous"
 ></script>
 </head>
 <body>
+    <!--여기 hearder 중복 쿠다사이 !-->
     <header id="navbar__dodo">
         <div class="navbar__left">
             <ul class="site_links">
                 <li class="site_links__li">
-                    <a href="/" class="li__anchor">Home</a>
+                    <a href="..\html\main.html" class="li__anchor">Home</a>
                 </li>
                 <li class="site_links__li">
                     <a href="/" class="li__anchor">Catalog</a>
@@ -54,6 +55,7 @@ crossorigin="anonymous"
             </ul>
         </div>
     </header>
+    <!--여기 검색창 옆으로 나오는 것도 중복 쿠다사이 -->
     <div class="searchplace">
         <div class="title">Search for Shit on our site
         </div>
@@ -74,7 +76,7 @@ crossorigin="anonymous"
             </h1>
         </div>
     </div>
-    <section id="home_main plus content_login" style="margin-top:140px;">
+    <section id="home_main plus content_login main" style="margin-top:140px; padding:0 32px;">
        <div class="contents_login">
             <div class="logo_login">
                 <h1 class="logo" style="font-size:20px">
@@ -84,7 +86,8 @@ crossorigin="anonymous"
                     Shoot! Take a Panorama
                 </h2>
             </div>
-            <div class="input_box">
+            <form action="#" name="userinput">
+                 <div class="input_box">
                 <h3 class="input_title" style="color:white">ID</h3>
                 <div class="input_item">
                     <input  type="text" placeholder="ex)Panorama@naver.com" autocomplete="off" class="input_txt" >
@@ -103,12 +106,14 @@ crossorigin="anonymous"
                  </p>
             </div>
             <div class="login_btn_box">
-                <a disabled="disabled" href="#" type="button" class=" disabled" data-v-f0b68f28=""> LOGIN </a>
-                <a href="#" type="button" class="btn btn_login_naver full solid" data-v-f0b68f28="">
+                <a  href="#" type="button" class=" disabled"  onClick="goData()" style="font-size:20px"> LOGIN </a>
+                <a href="#" type="button" class="disabled " data-v-f0b68f28="" style="background-color:rgb(170 215 255);">
                     <i class="fab fa-google"></i>
-                    <span>GOOGLE LOGIN</span>
+                    <span style="font-size:20px">GOOGLE LOGIN</span>
                 </a>
             </div>
+            </form>
+           
        </div>
 
        
@@ -117,6 +122,6 @@ crossorigin="anonymous"
     </section>
     
 </body>
-<script src="../js/main__magic.js"></script>
-<script src="../js/login__magic.js"></script>
+<script src="../js/slidesearch.js" defer></script>
+
 </html>
