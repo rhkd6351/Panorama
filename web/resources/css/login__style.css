@@ -1,0 +1,16 @@
+.input_txt{
+    color:white;
+    background-color: transparent;
+    border:none;
+    border-bottom:3px solid white;
+    font-family: 'Pangolin', cursive;
+
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.534);
+    font-family: 'Pangolin', cursive;
+  }
+.input_error{
+    opacity:0;
+
+}
