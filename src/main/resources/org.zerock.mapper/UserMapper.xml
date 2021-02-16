@@ -9,8 +9,8 @@
     </select>
 
     <insert id="insert">
-        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth)
-        values (user_seq.nextval, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth})
+        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth, regDate)
+        values (user_seq.nextval, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth}, sysdate)
     </insert>
 
     <insert id="insertSelectKey">
@@ -31,8 +31,7 @@
 
     <update id="update">
         update tbl_user
-        set userid = #{userId},
-            userpw = #{userPw},
+        set userpw = #{userPw},
             email = #{email},
             phone = #{phone},
             gender = #{gender},
