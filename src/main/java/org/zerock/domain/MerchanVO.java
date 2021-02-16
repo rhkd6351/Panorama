@@ -11,5 +11,6 @@ public class MerchanVO {
     private String content;
     private int price;
     private Date postDate;
+    private Date updateDate;
 
 }

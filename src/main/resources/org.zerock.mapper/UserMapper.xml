@@ -9,7 +9,7 @@
     </select>
 
     <insert id="insert">
-        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth, regDate)
+        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth, reg_date)
         values (user_seq.nextval, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth}, sysdate)
     </insert>
 
@@ -17,8 +17,8 @@
         <selectKey keyProperty="user_oid" order="BEFORE" resultType ="int">
             select user_seq.nextval from dual
         </selectKey>
-        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth)
-        values (#{oid}, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth})
+        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth, reg_date)
+        values (#{oid}, #{userId}, #{userPw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth}, #{regDate})
     </insert>
 
     <select id="read" resultType="org.zerock.domain.UserVO">
@@ -31,11 +31,11 @@
 
     <update id="update">
         update tbl_user
-        set userpw = #{userPw},
+        set user_pw = #{userPw},
             email = #{email},
             phone = #{phone},
             gender = #{gender},
-            authority = #{authority}
+            auth = #{auth}
         where user_oid = #{userOid}
     </update>
 
