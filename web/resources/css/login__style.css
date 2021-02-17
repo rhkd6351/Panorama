@@ -2,8 +2,9 @@
     color:white;
     background-color: transparent;
     border:none;
-    border-bottom:3px solid white;
+    
     font-family: 'Pangolin', cursive;
+    width:100%;
 
 }
 input::placeholder {
@@ -13,4 +14,52 @@ input::placeholder {
 .input_error{
     opacity:0;
 
+}
+.input_item{
+    border-bottom:3px solid white;
+}
+
+#content_login{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.contents_login{
+    padding:0 35vw;
+}
+.logo_login{
+    text-align: center;
+    padding:6vh 0;
+}
+
+.disabled{
+    padding: 0px 0px;
+    border:none;
+    vertical-align: bottom;
+  
+    text-decoration: none;
+    outline: none;
+    color: black;
+    margin: 0;
+    cursor: pointer;
+    font-family: 'Pangolin', cursive;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.16px;
+    height: 52px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom:1.5vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login_btn_box{
+    display: flex;
+    flex-direction: column;
+}
+.fa-google{
+    font-size:30px;
 }
