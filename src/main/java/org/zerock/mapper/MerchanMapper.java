@@ -1,7 +1,6 @@
 package org.zerock.mapper;
 
 import org.zerock.domain.MerchanVO;
-import org.zerock.domain.UserVO;
 
 import java.util.List;
 

@@ -12,6 +12,7 @@ import org.zerock.domain.UserVO;
 import org.zerock.service.UserService;
 import org.springframework.ui.Model;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Log4j
@@ -20,6 +21,15 @@ import java.util.List;
 @AllArgsConstructor
 public class UserController {
     private UserService service;
+    private HttpSession session;
+
+    @GetMapping("/loginCheck")
+    public String login(){
+        if(session.getAttribute("userId") == null)
+            return "/login";
+        else
+            return "/myInfo";
+    }
 
     @GetMapping("/list")
     public void list(Model model){

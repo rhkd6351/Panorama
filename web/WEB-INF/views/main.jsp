@@ -76,7 +76,7 @@
             <input type="text" class="container__input" placeholder="Search anything you want">
             <span class="input__button">
                     <i class="fas fa-search"></i>
-            </span>
+                </span>
         </div>
     </div>
     <div class="logo__center">
@@ -95,63 +95,205 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> New Shit </div>
             <div class="product_list">
-                <c:forEach items="{firstList}" var="merchan">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
-                            </a>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
                         </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                </h3>
-                                <h3 class="__nedan">$253
-                                </h3>
-                            </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
                         </div>
                     </div>
-                </c:forEach>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
             <div class="product_list">
-                <c:forEach items="{firstList}" var="merchan">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
-                            </a>
-                        </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info">
-                                    <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                </h3>
-                                <h3 class="__nedan">$253
-                                </h3>
-                            </div>
-                        </div>
-
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
                     </div>
-                </c:forEach>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
-
     <section id="twice plus">
         <div class="home_twice">
             <img src="..\img\goods\pngfind.com-jordan-shoe-png-5682385.png" alt="" style="width:30%" class="slide-one">
@@ -161,58 +303,202 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> Popular Shit </div>
             <div class="product_list">
-                <c:forEach items="secondList" var="merchan">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
-                            </a>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
                         </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                </h3>
-                                <h3 class="__nedan">$253
-                                </h3>
-                            </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
                         </div>
                     </div>
-                </c:forEach>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
             <div class="product_list">
-                <c:forEach items="thirdList" var="merchan">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
-                            </a>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
                         </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                </h3>
-                                <h3 class="__nedan">$253
-                                </h3>
-                            </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
                         </div>
                     </div>
-                </c:forEach>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
@@ -225,67 +511,208 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> Hope Shit </div>
             <div class="product_list">
-                <c:forEach items="fourthList" var="merchan">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
-                            </a>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
                         </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                </h3>
-                                <h3 class="__nedan">$253
-                                </h3>
-                            </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
                         </div>
-
                     </div>
 
-                </c:forEach>
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
             <div class="product_list">
-                <c:forEach items="fifthList" var="merchan">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
-                            </a>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
                         </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                </h3>
-                                <h3 class="__nedan">$253
-                                </h3>
-                            </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
                         </div>
-
                     </div>
 
-                </c:forEach>
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info" >
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product__item">
+                    <div class="product__pic">
+                        <a href="" style="height:100%">
+                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="brand__info_save">
+                            <button class="brand-info">
+                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                            </button>
+                            <button href="" class="save">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="thing__info_nedan">
+                            <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                            </h3>
+                            <h3 class="__nedan">$253
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
 </div>
+
 <script src="../js/slidesearch.js" ></script>
 </body>
-</html>
 
+</html>
