@@ -1,0 +1,71 @@
+.input_txts {
+  background-color: white;
+  border: none;
+  width: 100%;
+
+  font-family: "Bangers", cursive;
+}
+.selectge {
+  cursor: pointer;
+}
+.choice_layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(34, 34, 34, 0.5);
+  z-index: 1010;
+  display:none;
+}
+.choice_gender {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 16px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 450px;
+  display: grid;
+  grid-template-rows: 1.3fr 3fr 1.3fr;
+}
+.choice_button {
+  color: black;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 120px;
+  height: 60px;
+  margin: 0px 10px;
+}
+
+.choice_contents {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choicelogo {
+  font-family: "Lexend Mega", sans-serif;
+  color: black;
+  text-shadow: rgb(170, 215, 255) 0px 0 20px;
+  letter-spacing: -2px;
+  font-size: 25px;
+}
+.choice_header,
+.choice_enter_out{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice_enter{
+    color: black;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 120px;
+  height: 60px;
+  margin: 0px 10px;
+}

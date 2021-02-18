@@ -18,9 +18,6 @@ input::placeholder {
   border-bottom: 3px solid white;
 }
 
-#content_login {
-  width: 100%;
-}
 .contents_login {
   display: flex;
   flex-direction: column;
