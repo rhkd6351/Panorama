@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../resources/css/main__style.css">
     <link rel="stylesheet" href="../resources/css/login__style.css">
     <script
@@ -33,68 +34,10 @@
     <script src="../resources/js/loginmagic.js" defer></script>
 </head>
 <body>
-<!--���� hearder �ߺ� ��ٻ��� !-->
-<header id="navbar__dodo">
-    <div class="navbar__left">
-        <ul class="site_links">
-            <li class="site_links__li">
-                <a href="/" class="li__anchor">Home</a>
-            </li>
-            <li class="site_links__li">
-                <a href="/" class="li__anchor">Catalog</a>
-            </li>
-            <li class="site_links__li">
-                <a href="/" class="li__anchor">About us</a>
-            </li>
-        </ul>
-    </div>
-    <div class="navbar__center">
-        <h1 class="logo">
-            PANORAMA
-        </h1>
-    </div>
-    <div class="naver__right">
-        <ul class="site_links">
-            <li class="site_links__li">
-                <a class="li__button">
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="site_links__li">
-                <a class="li__button">
-                    <i class="fas fa-shopping-bag"></i>
-                </a>
-            </li>
-            <li class="site_links__li">
-                <a class="li__button" href="/user/loginCheck">
-                    <i class="fas fa-user-circle"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-</header>
-<!--���� �˻�â ������ ������ �͵� �ߺ� ��ٻ��� -->
-<div class="searchplace">
-    <div class="title">Search for Shit on our site
-    </div>
-    <div class="search__container">
-        <button class="delete">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="search__one">
-            <input type="text" class="container__input" placeholder="Search anything you want">
-            <span class="input__button">
-                    <i class="fas fa-search"></i>
-                </span>
-        </div>
-    </div>
-    <div class="logo__center">
-        <h1 class="logo" style="margin: 0; color:black ">
-            PANORAMA
-        </h1>
-    </div>
-</div>
-<section id="home_main plus content_login" class="main"style="margin-top:140px; padding:0 32px;">
+
+<%@include file="header.jsp" %>
+
+<section id="content_login" class="main"style="margin-top:140px; padding:0 32px 32px 32px;">
     <div class="contents_login">
         <div class="logo_login">
             <h1 class="logo" style="font-size:20px">
@@ -143,7 +86,7 @@
         </form>
         <div class="signupss">
             <div class="plusbuttons">
-                <a class="signupgo" href="../html/signup.html">SIGN UP</a>
+                <a class="signupgo" href="/user/register">SIGN UP</a>
             </div>
             <div class="plusbuttons" style="border-left:3px solid white; border-right:3px solid white;">
                 <a class="idcheckgo" >ID CHECK</a>

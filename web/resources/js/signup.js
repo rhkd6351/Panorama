@@ -43,3 +43,4 @@ submit_button.addEventListener("click",()=>{
 
 const brand = document.querySelector(".selectbr_out");
 const brand_real =document.querySelector(".selectbr");
+

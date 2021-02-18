@@ -44,13 +44,13 @@ public class UserController {
 
     @GetMapping("/register")
     public String register(){
-        return "user/register";
+        return "/register";
     }
 
     @PostMapping("/register")
     public String register(UserVO vo, RedirectAttributes rttr){
         service.register(vo);
-        return "redirect:/user/list";
+        return "/login";
     }
 
     @PostMapping("/remove")
