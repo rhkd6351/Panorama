@@ -14,6 +14,6 @@ public interface UserMapper {
 
     public int update(UserVO vo);
 
-    public UserVO read(int userOid);
+    public UserVO read(String userId);
 
 }

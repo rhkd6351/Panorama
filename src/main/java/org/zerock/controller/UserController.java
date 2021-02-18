@@ -24,9 +24,12 @@ public class UserController {
     private HttpSession session;
 
     @GetMapping("/loginCheck")
-    public String login(){
-        if(session.getAttribute("userId") == null)
+    public String login(Model model, String login){
+        if(session.getAttribute("userInfo") == null) {
+            if(login != null)
+                model.addAttribute("login", false);
             return "/login";
+        }
         else
             return "/myInfo";
     }
@@ -71,9 +74,21 @@ public class UserController {
     }
 
     @PostMapping("get")
-    public void get(Model model, int oid){
-        UserVO vo = service.get(oid);
+    public void get(Model model, String userId){
+        UserVO vo = service.get(userId);
         model.addAttribute("get", vo);
         log.info(vo);
+    }
+
+    @PostMapping("login")
+    public String login(Model model, String userId, String userPw){
+        UserVO vo = service.login(userId,userPw);
+        if(vo != null){
+            session.setAttribute("userInfo", vo);
+            return "redirect:/";
+        }else{
+            return "redirect:/user/loginCheck?login=false";
+        }
+
     }
 }

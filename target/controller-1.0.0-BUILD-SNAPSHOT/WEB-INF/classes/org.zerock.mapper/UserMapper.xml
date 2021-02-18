@@ -22,7 +22,7 @@
     </insert>
 
     <select id="read" resultType="org.zerock.domain.UserVO">
-        select * from tbl_user where user_oid = #{userOid}
+        select * from tbl_user where user_id = #{userId}
     </select>
 
     <delete id="delete">

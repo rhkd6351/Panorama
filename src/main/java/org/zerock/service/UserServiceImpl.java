@@ -28,8 +28,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserVO get(int oid) {
-        UserVO vo = mapper.read(oid);
+    public UserVO get(String userId) {
+        UserVO vo = mapper.read(userId);
         if(vo == null){
             log.info("회원정보를 가져오지 못하였습니다.");
             return null;
@@ -64,5 +64,15 @@ public class UserServiceImpl implements UserService {
     public List<UserVO> getList() {
         log.info("회원정보 로드에 성공하였습니다.");
         return mapper.getList();
+    }
+
+    @Override
+    public UserVO login(String userId, String userPw) {
+        UserVO vo = mapper.read(userId);
+        if(vo == null)
+            return null;
+        if(vo.getUserPw().equals(userPw))
+            return vo;
+        return null;
     }
 }

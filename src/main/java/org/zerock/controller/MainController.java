@@ -44,7 +44,7 @@ public class MainController {
         model.addAttribute("firstList",newlist);
         model.addAttribute("logoList",logoList);
 
-        return "/main_editing";
+        return "/main";
     }
 
 }

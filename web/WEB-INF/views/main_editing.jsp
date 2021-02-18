@@ -29,7 +29,7 @@
     <div class="navbar__left">
         <ul class="site_links">
             <li class="site_links__li">
-                <a href="..\resources\html\main.html" class="li__anchor">Home</a>
+                <a href="/" class="li__anchor">Home</a>
             </li>
             <li class="site_links__li">
                 <a href="/" class="li__anchor">Catalog</a>
