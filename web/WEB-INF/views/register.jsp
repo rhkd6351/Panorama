@@ -1,13 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: im-yegwang
-  Date: 2021/02/17
-  Time: 11:34 오전
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main__style.css">
     <link rel="stylesheet" href="../css/login__style.css">
     <link rel="stylesheet" href="../css/signup__style.css">
@@ -31,7 +21,7 @@
 
 </head>
 <body>
-<!--���� hearder �ߺ� ��ٻ��� !-->
+<!--여기 hearder 중복 쿠다사이 !-->
 <header id="navbar__dodo">
     <div class="navbar__left">
         <ul class="site_links">
@@ -71,7 +61,7 @@
         </ul>
     </div>
 </header>
-<!--���� �˻�â ������ ������ �͵� �ߺ� ��ٻ��� -->
+<!--여기 검색창 옆으로 나오는 것도 중복 쿠다사이 -->
 <div class="searchplace">
     <div class="title">Search for Shit on our site
     </div>
@@ -100,15 +90,16 @@
             </h1>
         </header>
         <div class="choice_contents">
-            <button class="choice_button">male</button>
-            <button class="choice_button">female</button>
+            <button class="choice_button" data-gender="male">male</button>
+            <button class="choice_button" data-gender="female">female</button>
         </div>
         <div class="choice_enter_out">
-            <button class="choice_enter" style="color:rgba(0, 0, 0, 0.3); border-color:rgba(0, 0, 0, 0.3);">Confirm
+            <button class="choice_enter">Confirm
             </button>
         </div>
     </div>
 </div>
+
 <section id="content_signup" class="main"style="margin-top:140px; padding:0 32px;">
     <div class="contents_login">
         <div class="logo_login">
@@ -156,14 +147,16 @@
             <div class="input_box">
                 <h3 class="input_title" style="color:white">GENDER</h3>
                 <div class="input_item selectge_out">
-                    <input  type="text" disabled="disabled" placeholder="select your gender" autocomplete="off" class="input_txt selectge " name="gender">
+                    <input  type="text"  placeholder="select your gender" autocomplete="off" class="input_txt selectge " name="gender" disabled="disabled" >
                 </div>
                 <p class="input_error" >
                     Please enter English, numbers, and special characters. (8-16 Characters)
                 </p>
             </div>
+
             <div class="login_btn_box">
-                <a  href="#" type="button" class=" disabled"  onClick="goData()" style="font-size:20px"> LOGIN </a>
+                <input  href="#" type="submit" class=" disabled submit_button"   style="font-size:20px" value="Sign up">  </input>
+
             </div>
         </form>
 

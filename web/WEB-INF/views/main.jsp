@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../resources/css/main__style.css">
     <script
             src="https://kit.fontawesome.com/bb830b2dcb.js"
@@ -86,7 +87,7 @@
     </div>
 </div>
 <div class="main">
-    <section id="home_main plus" style="margin-top:140px;">
+    <section id="content_login" class="main"style="margin-top:140px; padding:0 32px 32px 32px;">
         <div class="home_first">
             <img src="..\resources\img\goods\<c:out value="${logoList.get(0).name}"/>.png" alt="" style="width:30%" class="slide-one">
             <h1><c:out value="${logoList.get(0).name}"/> ($<c:out value="${logoList.get(0).price}"/>)</h1>

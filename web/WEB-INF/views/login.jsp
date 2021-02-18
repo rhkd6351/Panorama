@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../resources/css/main__style.css">
     <link rel="stylesheet" href="../resources/css/login__style.css">
     <script
@@ -94,7 +95,7 @@
         </h1>
     </div>
 </div>
-<section id="home_main plus content_login" class="main"style="margin-top:140px; padding:0 32px;">
+<section id="content_login" class="main"style="margin-top:140px; padding:0 32px 32px 32px;">
     <div class="contents_login">
         <div class="logo_login">
             <h1 class="logo" style="font-size:20px">
