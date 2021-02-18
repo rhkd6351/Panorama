@@ -38,7 +38,7 @@ ul{
 }
 .site_links__li{
     list-style: none;
-    
+
 }
 .site_links{
     display:flex;
@@ -54,7 +54,7 @@ button {
     text-decoration: none;
     outline: none;
     color: white;
-  }
+}
 a{
     text-decoration: none;
     outline: none;
@@ -99,22 +99,38 @@ a{
 .title_category{
     color:rgb(255, 217, 0);
     font-size: 1.8vw;
+    margin-bottom:7vh;
 }
 
 .product_list{
     display: flex;
     justify-content: space-evenly;
-    padding-top:5vh;
+
 }
 
 .product__item{
-    width:18%;
+    width:20.2vw;
+    display:grid;
+    grid-template-rows: 1fr 0.8fr;
 
 }
 .product__pic{
     width:100%;
     background-color: rgb(170, 215, 255);
     border-radius: 12px;
+    height:20.2vw;
+
+}
+.product__info{
+    padding:2vh 0 ;
+
+}
+.pic_anch{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+
 }
 .save{
     font-size:22px;
@@ -126,7 +142,7 @@ a{
     padding:2vh 0 ;
 }
 .brand-info{
-    
+
     width:50px;
 }
 
@@ -137,6 +153,7 @@ a{
 }
 .__nedan{
     color:rgb(255, 217, 0);
+    margin-bottom:0;
 
 }
 .home_twice{
@@ -168,7 +185,7 @@ a{
     display:flex;
     justify-content: center;
 
-    
+
 }
 .delete{
     position: absolute;
@@ -225,5 +242,4 @@ input{
 input::placeholder {
     color: rgba(0, 0, 0, 0.418);
     font-family: 'Pangolin', cursive;
-  }
-
+}

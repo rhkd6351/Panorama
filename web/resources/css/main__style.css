@@ -38,7 +38,7 @@ ul{
 }
 .site_links__li{
     list-style: none;
-    
+
 }
 .site_links{
     display:flex;
@@ -54,7 +54,7 @@ button {
     text-decoration: none;
     outline: none;
     color: white;
-  }
+}
 a{
     text-decoration: none;
     outline: none;
@@ -105,7 +105,7 @@ a{
 .product_list{
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 .product__item{
@@ -119,11 +119,11 @@ a{
     background-color: rgb(170, 215, 255);
     border-radius: 12px;
     height:20.2vw;
-    
+
 }
 .product__info{
     padding:2vh 0 ;
-    
+
 }
 .pic_anch{
     display:flex;
@@ -142,7 +142,7 @@ a{
     padding:2vh 0 ;
 }
 .brand-info{
-    
+
     width:50px;
 }
 
@@ -185,7 +185,7 @@ a{
     display:flex;
     justify-content: center;
 
-    
+
 }
 .delete{
     position: absolute;
@@ -242,5 +242,4 @@ input{
 input::placeholder {
     color: rgba(0, 0, 0, 0.418);
     font-family: 'Pangolin', cursive;
-  }
-
+}

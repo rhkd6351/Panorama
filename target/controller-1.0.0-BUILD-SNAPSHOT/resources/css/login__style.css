@@ -1,65 +1,88 @@
-.input_txt{
-    color:white;
-    background-color: transparent;
-    border:none;
-    
-    font-family: 'Pangolin', cursive;
-    width:100%;
+.input_txt {
+  color: white;
+  background-color: transparent;
+  border: none;
 
+  font-family: 'Bangers', cursive;
+  width: 100%;
 }
 input::placeholder {
-    color: rgba(255, 255, 255, 0.534);
-    font-family: 'Pangolin', cursive;
-  }
-.input_error{
-    opacity:0;
-
+  color: rgba(255, 255, 255, 0.534);
+  font-family: 'Bangers', cursive;
 }
-.input_item{
-    border-bottom:3px solid white;
+.input_error {
+  opacity: 0;
 }
-
-#content_login{
-    display:flex;
-    justify-content: center;
-    width:100%;
-}
-.contents_login{
-    padding:0 35vw;
-}
-.logo_login{
-    text-align: center;
-    padding:6vh 0;
+.input_item {
+  border-bottom: 3px solid white;
 }
 
-.disabled{
-    padding: 0px 0px;
-    border:none;
-    vertical-align: bottom;
-  
-    text-decoration: none;
-    outline: none;
-    color: black;
-    margin: 0;
-    cursor: pointer;
-    font-family: 'Pangolin', cursive;
-    width: 100%;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -.16px;
-    height: 52px;
-    text-align: center;
-    background-color: white;
-    border-radius: 12px;
-    margin-bottom:1.5vh;
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
+.contents_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.login_btn_box{
-    display: flex;
-    flex-direction: column;
+.logo_login {
+  text-align: center;
+  padding: 6vh 0;
 }
-.fa-google{
-    font-size:30px;
+
+.disabled {
+  padding: 0px 0px;
+  border: none;
+  vertical-align: bottom;
+  font-family: 'Bangers', cursive;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  height: 52px;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login_btn_box {
+  display: flex;
+  flex-direction: column;
+}
+.fa-google,
+.fa-facebook-f {
+  font-size: 30px;
+}
+.syakai {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+.syakailogo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px dotted black;
+}
+
+.signupss{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width:400px;
+
+}
+button{
+  font-family: 'Pangolin', cursive;
+
+}
+.plusbuttons{
+  text-align: center;
+
 }

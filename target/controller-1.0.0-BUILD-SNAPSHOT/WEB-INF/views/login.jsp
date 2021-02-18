@@ -29,6 +29,8 @@
             src="https://kit.fontawesome.com/bb830b2dcb.js"
             crossorigin="anonymous"
     ></script>
+    <script src="../resources/js/slidesearch.js" defer ></script>
+    <script src="../resources/js/loginmagic.js" defer></script>
 </head>
 <body>
 <!--���� hearder �ߺ� ��ٻ��� !-->
@@ -92,7 +94,7 @@
         </h1>
     </div>
 </div>
-<section id="home_main plus content_login main" style="margin-top:140px; padding:0 32px;">
+<section id="home_main plus content_login" class="main"style="margin-top:140px; padding:0 32px;">
     <div class="contents_login">
         <div class="logo_login">
             <h1 class="logo" style="font-size:20px">
@@ -124,15 +126,33 @@
                 </p>
             </div>
             <div class="login_btn_box">
-                <button class=" disabled"  onClick="goData()" style="font-size:20px"> LOGIN </button>
-                <a href="#" type="button" class="disabled " data-v-f0b68f28="" style="background-color:rgb(170 215 255);">
-                    <i class="fab fa-google"></i>
+                <a  href="#" type="button" class=" disabled"  onClick="goData()" style="font-size:20px"> LOGIN </a>
+                <a href="#" type="button" class="disabled syakai "  style="background-color:rgb(170 215 255);">
+                    <div class="syakailogo">
+                        <i class="fab fa-google"></i>
+                    </div>
                     <span style="font-size:20px">GOOGLE LOGIN</span>
+                </a>
+                <a href="#" type="button" class="disabled syakai "  style="background-color:#4267B2">
+                    <div class="syakailogo">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <span style="font-size:20px">FACEBOOK LOGIN</span>
                 </a>
             </div>
         </form>
+        <div class="signupss">
+            <div class="plusbuttons">
+                <a class="signupgo" href="../html/signup.html">SIGN UP</a>
+            </div>
+            <div class="plusbuttons" style="border-left:3px solid white; border-right:3px solid white;">
+                <a class="idcheckgo" >ID CHECK</a>
+            </div>
+            <div class="plusbuttons">
+                <a class="passwordcheckgo">PW CHECK</a>
+            </div>
+        </div>
     </div>
 </section>
 </body>
-<script src="../resources/js/slidesearch.js" defer></script>
 </html>
