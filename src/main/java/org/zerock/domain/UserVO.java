@@ -9,6 +9,7 @@ public class UserVO {
     private int userOid; //PK, auto increment
     private String userId;
     private String userPw;
+    private String name; //SELLER -> BRAND NAME
     private String email;
     private String phone;
     private String birth;

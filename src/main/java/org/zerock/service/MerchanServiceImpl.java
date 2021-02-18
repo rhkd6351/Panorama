@@ -52,4 +52,16 @@ public class MerchanServiceImpl implements MerchanService{
         log.info("listing Merchan...");
         return mapper.getList();
     }
+
+    @Override
+    public List<MerchanVO> getNewList() {
+        log.info("listing Newest Merchan...");
+        return mapper.getNewList();
+    }
+
+    @Override
+    public List<MerchanVO> getLogoList() {
+        log.info("listing Logo Merchan...");
+        return mapper.getLogoList();
+    }
 }

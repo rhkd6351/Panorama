@@ -9,16 +9,16 @@
     </select>
 
     <insert id="insert">
-        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth, reg_date)
-        values (user_seq.nextval, #{user_id}, #{user_pw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth}, sysdate)
+        insert into tbl_user(user_oid, user_id, user_pw, name, birth, email, phone, gender, auth, reg_date)
+        values (user_seq.nextval, #{user_id}, #{user_pw}, #{name}, #{birth}, #{email}, #{phone}, #{gender}, #{auth}, sysdate)
     </insert>
 
     <insert id="insertSelectKey">
         <selectKey keyProperty="userOid" order="BEFORE" resultType ="int">
             select user_seq.nextval from dual
         </selectKey>
-        insert into tbl_user(user_oid, user_id, user_pw, birth, email, phone, gender, auth, reg_date)
-        values (#{oid}, #{userId}, #{userPw}, #{birth}, #{email}, #{phone}, #{gender}, #{auth}, #{regDate})
+        insert into tbl_user(user_oid, user_id, user_pw, name, birth, email, phone, gender, auth, reg_date)
+        values (#{oid}, #{userId}, #{userPw}, #{birth}, #{name}, #{email}, #{phone}, #{gender}, #{auth}, #{regDate})
     </insert>
 
     <select id="read" resultType="org.zerock.domain.UserVO">
@@ -32,6 +32,7 @@
     <update id="update">
         update tbl_user
         set user_pw = #{userPw},
+            name = #{name},
             email = #{email},
             phone = #{phone},
             gender = #{gender},

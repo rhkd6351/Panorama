@@ -8,6 +8,14 @@
     <![CDATA[select * from tbl_merchan ]]>
     </select>
 
+    <select id="getNewList" resultType="org.zerock.domain.MerchanVO">
+    <![CDATA[select * from tbl_merchan ORDER BY post_date DESC]]>
+    </select>
+
+    <select id="getLogoList" resultType="org.zerock.domain.MerchanVO">
+    <![CDATA[select * from tbl_merchan where logo > 0 ORDER BY logo ASC]]>
+    </select>
+
     <insert id="insert">
         insert into tbl_merchan(merchan_oid, user_oid, sort, name, content, price, post_date)
         values (merchan_seq.nextval, #{userOid}, #{sort}, #{name}, #{content}, #{price}, sysdate)

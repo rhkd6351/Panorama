@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main__style.css">
+    <link rel="stylesheet" href="../resources/css/main__style.css">
     <script
             src="https://kit.fontawesome.com/bb830b2dcb.js"
             crossorigin="anonymous"
@@ -29,7 +29,7 @@
     <div class="navbar__left">
         <ul class="site_links">
             <li class="site_links__li">
-                <a href="..\html\main.html" class="li__anchor">Home</a>
+                <a href="..\resources\html\main.html" class="li__anchor">Home</a>
             </li>
             <li class="site_links__li">
                 <a href="/" class="li__anchor">Catalog</a>
@@ -88,7 +88,7 @@
 <div class="main">
     <section id="home_main plus" style="margin-top:140px;">
         <div class="home_first">
-            <img src="..\img\goods\pngkin.com_travis-scott-png_517022.png" alt="" style="width:30%" class="slide-one">
+            <img src="..\resources\img\goods\pngkin.com_travis-scott-png_517022.png" alt="" style="width:30%" class="slide-one">
             <h1>Jordan 1 Retro High Travis Scott ($1,819)</h1>
             <p>All free if you sign up</p>
         </div>
@@ -98,13 +98,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -122,13 +122,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -146,13 +146,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -170,13 +170,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -197,13 +197,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -221,13 +221,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -245,13 +245,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -269,13 +269,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -296,7 +296,7 @@
     </section>
     <section id="twice plus">
         <div class="home_twice">
-            <img src="..\img\goods\pngfind.com-jordan-shoe-png-5682385.png" alt="" style="width:30%" class="slide-one">
+            <img src="..\resources\img\goods\pngfind.com-jordan-shoe-png-5682385.png" alt="" style="width:30%" class="slide-one">
             <h1>Nike Jordan 4 Retro Travis Scott Cactus Jack ($1,620)</h1>
             <p>All free if you sign up</p>
         </div>
@@ -306,13 +306,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -330,13 +330,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -354,13 +354,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -378,13 +378,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -405,13 +405,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -429,13 +429,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -453,13 +453,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -477,13 +477,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -504,7 +504,7 @@
     </section>
     <section id="third plus">
         <div class="home_third">
-            <img src="..\img\goods\pngfind.com-jordans-png-855488.png" alt="" style="width:30%" class="slide-one">
+            <img src="..\resources\img\goods\pngfind.com-jordans-png-855488.png" alt="" style="width:30%" class="slide-one">
             <h1>NIKE NIKE Air Jordan 4 Retro LS - 12. 5"Oreo - 314254 003(475$)</h1>
             <p>All free if you sign up</p>
         </div>
@@ -514,13 +514,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -538,13 +538,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -562,13 +562,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -586,13 +586,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -613,13 +613,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -637,13 +637,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info" >
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -661,13 +661,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -685,13 +685,13 @@
                 <div class="product__item">
                     <div class="product__pic">
                         <a href="" style="height:100%">
-                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
                         </a>
                     </div>
                     <div class="product__info">
                         <div class="brand__info_save">
                             <button class="brand-info">
-                                <img src="..\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
                             </button>
                             <button href="" class="save">
                                 <i class="far fa-bookmark"></i>
@@ -712,7 +712,7 @@
     </section>
 </div>
 
-<script src="../js/slidesearch.js" ></script>
+<script src="../resources/js/slidesearch.js" ></script>
 </body>
 
 </html>
