@@ -11,21 +11,25 @@ import java.util.List;
 @Log4j
 @Service
 @AllArgsConstructor
+
 public class UserServiceImpl implements UserService {
 
     UserMapper mapper;
 
     @Override
-    public void register(UserVO vo) {
-
+    public void register(UserVO vo) throws FoolException {
         try{
             mapper.insert(vo);
         }catch(Exception e){
             log.info("회원등록에 실패하였습니다.");
-            e.printStackTrace();
+            throw new FoolException();
         }
         log.info("신규회원 등록이 완료되었습니다.");
     }
+
+    public class FoolException extends RuntimeException {
+    }
+
 
     @Override
     public UserVO get(String userId) {

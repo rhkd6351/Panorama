@@ -26,7 +26,12 @@
 <body>
 <%@include file="header.jsp" %>
 <div class="main">
-    미구현
+    <section id="home_main plus" style="margin-top:140px;">
+        <div class="home_first">
+            <h1>미구현 <a href="/user/logout" style="color: black">LOGOUT</a></h1>
+
+        </div>
+    </section>
 </div>
 <script src="../resources/js/slidesearch.js" ></script>
 </body>

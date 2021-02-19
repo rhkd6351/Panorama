@@ -9,6 +9,7 @@ public class MerchanVO {
 
     private int merchanOid; //PK, auto increment
     private int userOid;
+    private String brandName;
     private String sort;
     private String name;
     private String content;

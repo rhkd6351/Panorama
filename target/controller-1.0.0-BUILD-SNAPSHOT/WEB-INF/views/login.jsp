@@ -40,12 +40,9 @@
 <section id="content_login" class="main"style="margin-top:140px; padding:0 32px 32px 32px;">
     <div class="contents_login">
         <div class="logo_login">
-            <h1 class="logo" style="font-size:20px">
-                PANORAMA
+            <h1 class="logo" style="font-size:35px">
+                LOGIN
             </h1>
-            <h2 class="logo" style="font-size:10px">
-                Shoot! Take a Panorama
-            </h2>
         </div>
         <form action="login" name="userinput" method="post">
             <div class="input_box">

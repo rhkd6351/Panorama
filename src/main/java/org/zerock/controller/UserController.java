@@ -1,18 +1,24 @@
 package org.zerock.controller;
 
 
+import com.sun.deploy.net.HttpResponse;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.UserVO;
 import org.zerock.service.UserService;
 import org.springframework.ui.Model;
+import org.zerock.service.UserServiceImpl;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 @Log4j
@@ -47,10 +53,15 @@ public class UserController {
         return "/register";
     }
 
+    @ResponseBody
     @PostMapping("/register")
-    public String register(UserVO vo, RedirectAttributes rttr){
-        service.register(vo);
-        return "/login";
+    public String register(Model model,UserVO vo){
+        try{
+            service.register(vo);
+        }catch(UserServiceImpl.FoolException e){
+            return "<script>alert('duplicated id');history.back();</script>";
+        }
+        return "<script>alert('register success');location.href='/user/loginCheck';</script>";
     }
 
     @PostMapping("/remove")
@@ -89,6 +100,11 @@ public class UserController {
         }else{
             return "redirect:/user/loginCheck?login=false";
         }
+    }
 
+    @GetMapping("logout")
+    public String login(){
+        session.removeAttribute("userInfo");
+        return "redirect:/";
     }
 }

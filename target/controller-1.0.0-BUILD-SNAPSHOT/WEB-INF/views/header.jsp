@@ -5,7 +5,7 @@
                 <a href="/" class="li__anchor">Home</a>
             </li>
             <li class="site_links__li">
-                <a href="/" class="li__anchor">Catalog</a>
+                <a href="/" class="li__anchor">Category</a>
             </li>
             <li class="site_links__li">
                 <a href="/" class="li__anchor">About us</a>
@@ -14,7 +14,7 @@
     </div>
     <div class="navbar__center">
         <h1 class="logo">
-            PANORAMA
+            <a href="/">PANORAMA</a>
         </h1>
     </div>
     <div class="naver__right">

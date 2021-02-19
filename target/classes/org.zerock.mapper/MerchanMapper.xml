@@ -17,16 +17,16 @@
     </select>
 
     <insert id="insert">
-        insert into tbl_merchan(merchan_oid, user_oid, sort, name, content, price, post_date)
-        values (merchan_seq.nextval, #{userOid}, #{sort}, #{name}, #{content}, #{price}, sysdate)
+        insert into tbl_merchan(merchan_oid, user_oid, sort, name, content, price, post_date, brand_name)
+        values (merchan_seq.nextval, #{userOid}, #{sort}, #{name}, #{content}, #{price}, sysdate, #{brandName})
     </insert>
 
     <insert id="insertSelectKey">
         <selectKey keyProperty="merchanOid" order="BEFORE" resultType ="int">
             select merchan_seq.nextval from dual
         </selectKey>
-        insert into tbl_merchan(merchan_oid, user_oid, sort, name, content, price, post_date)
-        values (#{merchanOid}, #{userOid}, #{sort}, #{name}, #{content}, #{price}, sysdate)
+        insert into tbl_merchan(merchan_oid, user_oid, sort, name, content, price, post_date, brand_name)
+        values (#{merchanOid}, #{userOid}, #{sort}, #{name}, #{content}, #{price}, sysdate, #{brandName})
     </insert>
 
     <select id="read" resultType="org.zerock.domain.MerchanVO">
@@ -44,6 +44,7 @@
             content = #{content},
             price = #{price},
             update_date = sysdate
+            brand_oid = #{brand_oid}
         where merchan_oid = #{merchanOid}
     </update>
 

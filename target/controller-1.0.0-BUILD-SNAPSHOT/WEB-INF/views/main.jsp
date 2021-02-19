@@ -40,14 +40,14 @@
                 <c:forEach items="${firstList}" var="merchan" varStatus="status" begin="0" end="2">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\resources\img\goods\<c:out value="${merchan.name}"/>.png" alt="" style="width: 100%;">
+                            <a href="" class="pic_anch">
+                                <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
                         <div class="product__info">
                             <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <button class="brand-info">
+                                    <img src="..\resources\img\brand\<c:out value="${merchan.brandName}"/>.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
@@ -67,14 +67,14 @@
                 <c:forEach items="${firstList}" var="merchan" varStatus="status" begin="3" end="5">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\resources\img\goods\<c:out value="${merchan.name}"/>.png" alt="" style="width: 100%;">
+                            <a href="" class="pic_anch">
+                                <img src="..\resources\img\goods\<c:out value="${merchan.name}"/>.png" alt="" style="width: 80%;">
                             </a>
                         </div>
                         <div class="product__info">
                             <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <button class="brand-info">
+                                    <img src="..\resources\img\brand\<c:out value="${merchan.brandName}"/>.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
@@ -105,7 +105,7 @@
                     <div class="product__item">
                         <div class="product__pic">
                             <a href="" style="height:100%">
-                                <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                                <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 80%;">
                             </a>
                         </div>
                         <div class="product__info">
