@@ -108,21 +108,12 @@
                     Please enter English, numbers, and special characters. (8-16 Characters)
                 </p>
             </div>
-
             <div class="login_btn_box">
                 <input type="submit" class=" disabled submit_button"   style="font-size:20px" value="Sign up">  </input>
-
             </div>
         </form>
-
-
     </div>
-
-
-
-
 </section>
-
 </body>
 
 
