@@ -19,6 +19,7 @@ crossorigin="anonymous"
     <script src="../js/slidesearch.js" defer ></script>
     <script src="../js/signup.js" defer></script>
 
+
 </head>
 <body>
     <!--여기 hearder 중복 쿠다사이 !-->
@@ -41,10 +42,10 @@ crossorigin="anonymous"
                 PANORAMA
             </h1>
         </div>
-        <div class="naver__right">
+        <div class="navbar__right">
             <ul class="site_links">
                 <li class="site_links__li">
-                    <a class="li__button">
+                    <a class="li__button search">
                         <i class="fas fa-search"></i>
                     </a>
                 </li>
@@ -60,7 +61,53 @@ crossorigin="anonymous"
                 </li>
             </ul>
         </div>
+        <div class="navbar__menu">
+            <button class="menu__plus">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>  
     </header>
+    <div class="menusmall" >
+        
+        <header id="logo_bar">
+            
+            <div class="navbar__center">
+                <h1 class="logo">
+                    PANORAMA
+                </h1>
+            </div>
+            
+            <div class="navbar__delete">
+                <button class="deletet">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </header>
+        <ul class="__navbar__ul__small">
+            <li class="ul__menu__small">
+                <a href="..\html\main.html" class="small_anchor">Home</a>
+            </li>
+            <li class="ul__menu__small"><a href="/" class="small_anchor">Catalog</a></li>
+            <li class="ul__menu__small"><a href="/" class="small_anchor">About us</a></li>
+            <li class="ul__menu__small">
+                <a class="small_anchor search2">
+                    Search</i>
+                </a>
+            </li>
+            <li class="ul__menu__small">
+                <a class="small_anchor ">
+                    Cart</i>
+                </a>
+            </li>
+            <li class="ul__menu__small">
+                <a class="small_anchor" href="..\html\login.html">
+                    User
+                </a>
+            </li>
+            
+
+        </ul>
+    </div>
     <!--여기 검색창 옆으로 나오는 것도 중복 쿠다사이 -->
     <div class="searchplace">
         <div class="title">Search for Shit on our site
@@ -77,7 +124,7 @@ crossorigin="anonymous"
             </div>
         </div>
         <div class="logo__center">
-            <h1 class="logo" style="margin: 0; color:black ">
+            <h1 class="logo logochange" style="margin: 0; color:black ">
                 PANORAMA
             </h1>
         </div>
@@ -110,52 +157,52 @@ crossorigin="anonymous"
             <form action="#" name="userinput">
                  <div class="input_box">
                     <h3 class="input_title" style="color:white">ID</h3>
-                    <div class="input_item">
-                    <input  type="email" placeholder="ex)Panorama@naver.com" autocomplete="off" class="input_txt" name="userID">
+                    <div class="input_item id__border">
+                    <input  type="email" placeholder="ex)Panorama@naver.com" autocomplete="off" class="input_txt input_id " name="userID">
                 </div>
-                <p  class="input_error" > 
+                <p  class="input_error input_error_id" data-error="1"> 
                     Please enter it correctly 
                 </p>
                 </div>
                 <div class="input_box">
                 <h3 class="input_title" style="color:white">PASSWORD</h3>
-                <div class="input_item">
-                    <input  type="password" placeholder="" autocomplete="off" class="input_txt" name="userPw">
+                <div class="input_item password__border">
+                    <input  type="password" placeholder="" autocomplete="off" class="input_txt input__password" name="userPw" >
                 </div>
-                <p class="input_error" > 
+                <p class="input_error input_error_password  " data-error="1" > 
                     Please enter English, numbers, and special characters. (8-16 Characters)
                  </p>
                 </div>
                 <div class="input_box">
                     <h3 class="input_title" style="color:white">PHONE NUMBER</h3>
-                    <div class="input_item">
-                        <input  type="tel" placeholder="" autocomplete="off" class="input_txt" name="phone">
+                    <div class="input_item number__border">
+                        <input  type="tel" placeholder="" autocomplete="off" class="input_txt input__number" name="phone">
                     </div>
-                    <p class="input_error" > 
-                        Please enter English, numbers, and special characters. (8-16 Characters)
+                    <p class="input_error input_error_number  " data-error="1" > 
+                        Please enter it correctly 
                      </p>
                     </div>
                  <div class="input_box">
                 <h3 class="input_title" style="color:white">BIRTH</h3>
                 <div class="input_item"  style="border: none;">
-                    <input  type="date" value="2000-01-01" placeholder=""  class="input_txts" >
+                    <input  type="date" value="" placeholder=""  class="input_txts input_date" onchange="aram()" >
                 </div>
-                <p class="input_error" > 
+                <p class="input_error input_error_date" data-error="1" > 
                     Please enter English, numbers, and special characters. (8-16 Characters)
                  </p>
                 </div>
                 <div class="input_box">
                     <h3 class="input_title" style="color:white">GENDER</h3>
                     <div class="input_item selectge_out">
-                        <input  type="text"  placeholder="select your gender" autocomplete="off" class="input_txt selectge " name="gender" disabled="disabled" >
+                        <input  type="text"  placeholder="select your gender" class="input_txt selectge " name="gender"  onclick="aram2()" readonly>
                     </div>
-                    <p class="input_error" > 
+                    <p class="input_error input_error_gender" data-error="1"> 
                         Please enter English, numbers, and special characters. (8-16 Characters)
                      </p>
                     </div>
                     
                 <div class="login_btn_box">
-                <input  href="#" type="submit" class=" disabled submit_button"   style="font-size:20px" value="Sign up">  </input>
+                <input  href="#" type="submit" class=" disabled submit_button submit_button_notwork"   style="font-size:20px" value="Sign up">  </input>
                 
                 </div>
             </form>
