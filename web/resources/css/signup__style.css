@@ -89,3 +89,16 @@
 .login_btn_box{
     margin-top: 1.5vh;
 }
+
+label{
+  color:white;
+}
+.input_error{
+  color:rgb(241, 87, 70);
+}
+
+.submit_button_notwork{
+  opacity:0.5;
+  pointer-events: none;
+  color:rgba(0, 0, 0, 0.5);
+}
