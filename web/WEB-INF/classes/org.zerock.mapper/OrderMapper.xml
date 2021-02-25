@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.mapper.OrderMapper">
+    <select id="getList" resultType="org.zerock.domain.OrderVO">
+    <![CDATA[select * from tbl_order ]]>
+    </select>
+
+    <select id="getListUser" resultType="org.zerock.domain.OrderVO">
+    <![CDATA[select * from tbl_order where user_id = #{userId}]]>
+    </select>
+
+    <insert id="insert">
+        insert into tbl_order(order_oid, merchan_oid,user_id, count, order_date, demand, invoice, state)
+        values(brand_seq.nextval, #{merchanOid},#{userId},#{orderDate},#{demand},#{invoice},#{state})
+    </insert>
+
+    <select id="read" resultType="org.zerock.domain.OrderVO">
+        select * from tbl_order where order_oid = #{orderOid}
+    </select>
+
+    <delete id="delete">
+        delete from tbl_order where order_oid = #{OrderOId}
+    </delete>
+
+    <update id="update">
+        update tbl_order
+        set merchan_oid = #{merchanOid},
+            user_id = #{userId},
+            count = #{count},
+            demand = #{demand},
+            invoice = #{invoice},
+            state = #{state}
+        where order_oid = #{orderOid}
+    </update>
+
+</mapper>
