@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main__style.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/mybrand.css">
+    <link rel="stylesheet" href="../css/signup__style.css">
+
+
+
+    <script
+src="https://kit.fontawesome.com/bb830b2dcb.js"
+crossorigin="anonymous"
+></script>
+</head>
+<body>
+    <!--여기 hearder 중복 쿠다사이 !-->
+    <header id="navbar__dodo">
+        <div class="navbar__left">
+            <ul class="site_links">
+                <li class="site_links__li">
+                    <a href="..\html\main.html" class="li__anchor">Home</a>
+                </li>
+                <li class="site_links__li">
+                    <a href="/" class="li__anchor">Catalog</a>
+                </li>
+                <li class="site_links__li">
+                    <a href="/" class="li__anchor">About us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar__center">
+            <h1 class="logo">
+                PANORAMA
+            </h1>
+        </div>
+        <div class="navbar__right">
+            <ul class="site_links">
+                <li class="site_links__li">
+                    <a class="li__button search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li class="site_links__li">
+                    <a class="li__button">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </li>
+                <li class="site_links__li">
+                    <a class="li__button" href="..\html\login.html">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar__menu">
+            <button class="menu__plus">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!--여기 검색창 옆으로 나오는 것도 중복 쿠다사이 -->
+    <div class="menusmall" >
+        
+        <header id="logo_bar">
+            
+            <div class="navbar__center">
+                <h1 class="logo">
+                    PANORAMA
+                </h1>
+            </div>
+            
+            <div class="navbar__delete">
+                <button class="deletet">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </header>
+        <ul class="__navbar__ul__small">
+            <li class="ul__menu__small">
+                <a href="..\html\main.html" class="small_anchor">Home</a>
+            </li>
+            <li class="ul__menu__small"><a href="/" class="small_anchor">Catalog</a></li>
+            <li class="ul__menu__small"><a href="/" class="small_anchor">About us</a></li>
+            <li class="ul__menu__small">
+                <a class="small_anchor search2">
+                    Search</i>
+                </a>
+            </li>
+            <li class="ul__menu__small">
+                <a class="small_anchor ">
+                    Cart</i>
+                </a>
+            </li>
+            <li class="ul__menu__small">
+                <a class="small_anchor" href="..\html\login.html">
+                    User
+                </a>
+            </li>
+            
+
+        </ul>
+    </div>
+    <!--이것도 중복! -->
+    <div class="searchplace">
+        <div class="title">Search for Shit on our site
+        </div>
+        <div class="search__container">
+            <button class="delete">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="search__one">
+                <div class="one__input">
+                    <input type="text" class="container__input" placeholder="Search anything you want">
+                </div>
+                <span class="input__button">
+                    <i class="fas fa-search"></i>
+                </span>
+            </div>
+        </div>
+        <div class="logo__center">
+            <h1 class="logo logochange" style="margin: 0; color:black ">
+                PANORAMA
+            </h1>
+        </div>
+    </div>
+    <div class="choice_layer" >
+        
+        <form class="plus_brand">
+            
+            <header class="choice_header">
+                <h1 class="logo" style="font-size:35px; margin:0; color:black">
+                    PLUS
+                </h1>
+                <button class="delete__choice_layer" type="button">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </header>
+            <div class="choice_contents" style="flex-direction: column; justify-content: flex-start;overflow-y: scroll;
+            padding-bottom:3px;
+            ">
+                <div class="input_box">
+                    <h3 class="input_title" style="color:black; margin:1vw 0;">Product Name</h3>
+                    <div class="input_ones">
+                    <input type="text"  autocomplete="off" class="input_one " name="Product_N" data-type="text">
+                    </div>
+                    <p class="input_error input_eng_number  " data-error="1" > 
+                        Please enter it anything
+                     </p>
+                </div> 
+                <div class="input_box">
+                    <h3 class="input_title" style="color:black; margin:1vw 0;">Product Price</h3>
+                    <div class="input_ones">
+                    <input type="text"  autocomplete="off" class="input_one " name="userID" data-type="number">
+                    </div>
+                    <p class="input_error input_error_number  " data-error="1" > 
+                        Please enter it only number(0-9) 
+                     </p>
+
+                </div> 
+                <div class="input_box">
+                    <h3 class="input_title" style="color:black; margin:1vw 0;">Product Infomation</h3>
+                    <div class="input_ones">
+                    <input type="text"  autocomplete="off" class="input_one " name="Product_INFO" data-type="text">
+                    </div>
+                    <p class="input_error input_error_number  " data-error="1" > 
+                        Please enter it anything
+                     </p>
+
+                </div> 
+                <div class="input_box">
+                    <h3 class="input_title" style="color:black; margin:1vw 0;">Product Kinds</h3>
+                    <div class="input_ones">
+                        <button class="kinds_button"  type="button">Top</button>
+                        <button class="kinds_button" type="button">Pants</button>
+                        <button class="kinds_button" type="button">Shoes</button> 
+                        <br>
+                        <button class="kinds_button" type="button">Hat</button>   
+                        <button class="kinds_button" type="button">Bag</button>   
+                        <input type="text"  autocomplete="off" class="input_one " id="kinds_one" name="Product_KINDS" style="display:none">
+                    </div>
+                    <p class="input_error input_error_number  " data-error="1" > 
+                        Please enter it only english  
+                     </p>
+
+                </div> 
+                <div class="input_box">
+                    <h3 class="input_title" style="color:black; margin:1vw 0;">Product Pic</h3>
+                    <div class="input_ones">
+                    <input type="file"  autocomplete="off" class="input_one input_file " name="Product_PIC" onchange="handleFiles(this.files)">
+                    </div>
+                    <p class="input_error input_error_number  " data-error="1" > 
+                        Please enter it only english  
+                     </p>
+                    
+
+                </div> 
+            </div>
+            <div class="choice_enter_out">
+                <input class="brand_enter submit_button_notwork" type="submit" value="Create">
+                </input>
+            </div>
+        </form>
+    </div>
+    <div class="seller__info">
+        <div class="user__container" >
+                <div class="container__menu">
+                    <h1 class="mypage_logo">
+                        MY BRAND
+                    </h1>
+                    <ul class="ul_mypage">
+                        <li class="li_mypage">
+                            <button class=" gobutton" data-sectiongo="brand">My Brand</button>
+                        </li>
+                        <li class="li_mypage">
+                            <button class=" gobutton " data-sectiongo="sales">Total Sales</button>
+                        </li>
+                        <li class="li_mypage">
+                            <button class=" gobutton" data-sectiongo="wish">Wish list</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container__user_info">
+                    <div class="brand__info">
+                        <div class="brand_info_kotoba">
+                            <strong class="brand__name">NIKE</strong>
+                            <h1 class="brand__date">since 1964</h1>
+                        </div>
+                        <div class="brand_logo">
+                            <a href="" style="height:100%;background-color: rgb(170, 215, 255)" class="brand_an">
+                                <img src="../img/logo/nike_logo.png" alt="" class="mybrand__logo">
+                            </a>
+                        </div>
+                        
+
+                    </div>
+                    <div class="user_info__brand sales">
+                        <div class="brand_title">
+                            <strong  class="position" style="color:white">Brand Sales</strong>
+                        </div>
+                        <div class="user_info__sales" style="margin-top: 30px;">
+                            <div  class="info_point" >
+                                <strong  class="sales_one" style="color:white">55</strong>
+                                <p  class="sales_info" style="color:white" >Total</p>
+                            </div> 
+                            <div  class="info_point" style="border-left:3px solid white">
+                                <strong  class="sales_one" style="color:white">1</strong>
+                                <p  class="sales_info" style="color:white" >Rank</p>
+                            </div> 
+                            <div  class="info_point" style="border-left:3px solid white">
+                                    <strong  class="sales_one" style="color:white">95,123,421$</strong>
+                                    <p  class="sales_info" style="color:white" >Price</p>
+                            </div>    
+                            <div  class="info_point" style="border-left:3px solid white">
+                                <strong  class="sales_one" style="color:white">10%</strong>
+                                <p  class="sales_info" style="color:white" >fees</p>
+                        </div>  
+                        </div>
+                    </div>
+                    <div class="user_info__brand sales">
+                        <div class="brand_list_title">
+                            <strong  class="position" style="color:white">Merchandise List</strong>
+                            <button  class="brand_list_edit">
+                                <span style="font-weight: 1000; margin-right:0.5vw">Plus</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                        </div>
+                        <div class="brand_list_one">
+                            <div class="one__shit">
+                                <div class="deleteshit">
+                                    <button class="deleteone">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="shit_pic">
+                                    <div class="pic_back">
+                                        <img src="..\img\goods\pngfind.com-jordan-shoe-png-5682385.png" alt="" style="width:50%;">
+                                    </div>
+                                </div>
+                                <div class="shit_info">
+                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                    </h3>
+                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="one__shit">
+                                <div class="deleteshit">
+                                    <button class="deleteone">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="shit_pic">
+                                    <div class="pic_back">
+                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="shit_info">
+                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                    </h3>
+                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="one__shit">
+                                <div class="deleteshit">
+                                    <button class="deleteone">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="shit_pic">
+                                    <div class="pic_back">
+                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="shit_info">
+                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                    </h3>
+                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="one__shit">
+                                <div class="deleteshit">
+                                    <button class="deleteone">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="shit_pic">
+                                    <div class="pic_back">
+                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="shit_info">
+                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                    </h3>
+                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="one__shit">
+                                <div class="deleteshit">
+                                    <button class="deleteone">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="shit_pic">
+                                    <div class="pic_back">
+                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="shit_info">
+                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                    </h3>
+                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="one__shit">
+                                <div class="deleteshit">
+                                    <button class="deleteone">
+                                        <i class="fas fa-times" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="shit_pic">
+                                    <div class="pic_back">
+                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="shit_info">
+                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                    </h3>
+                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                    </h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                        
+                </div>
+    </div>
+
+        
+    
+    <script src="../js/slidesearch.js" ></script>
+    <script src="../js/usermagic.js" ></script>        
+    <script src="../js/seller_magic.js" ></script>        
+
+</body>
+
+</html>
