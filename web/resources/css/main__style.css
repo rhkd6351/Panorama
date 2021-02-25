@@ -207,14 +207,10 @@ input {
   outline: none;
 }
 .container__input {
-  border: 1px solid #b3b3b3;
-  line-height: 50px;
-  height: 25px;
-  width: 100%;
-  max-width: 100%;
-  font-size: 20px;
-  padding: 8px 0px 8px 12px;
   outline: none;
+  font-size:22px;
+  border:none;
+  width:100%;
 }
 
 .logo__center {
@@ -281,7 +277,16 @@ input::placeholder {
     display:flex;
     align-items: center;
 }
-
+.one__input{
+  width:100%;
+  border: 1px solid #b3b3b3;
+  max-width: 100%;
+  outline: none;
+  height:35px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 750px) {
   #navbar__dodo {
     display: flex;
@@ -304,4 +309,23 @@ input::placeholder {
   .logochange{
     font-size:20px;
   }
+  .product__item {
+    width: 17.5vw;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+}
+.brand-info {
+  width: 35px;
+}
+.container__input {
+  
+  font-size:13px;
+  
+}
+.search__one {
+  grid-template-columns: 7fr 3fr;
+  
+
+}
+
 }
