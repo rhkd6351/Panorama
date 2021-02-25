@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/css/main__style.css">
+    <link rel="stylesheet" href="../../resources/css/main__style.css">
     <script
             src="https://kit.fontawesome.com/bb830b2dcb.js"
             crossorigin="anonymous"
@@ -33,6 +33,6 @@
         </div>
     </section>
 </div>
-<script src="../resources/js/slidesearch.js" ></script>
+<script src="../../resources/js/slidesearch.js" ></script>
 </body>
 </html>

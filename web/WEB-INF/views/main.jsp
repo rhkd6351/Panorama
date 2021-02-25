@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: im-yegwang
-  Date: 2021/02/17
-  Time: 11:34 오전
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -18,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/css/main__style.css">
+    <link rel="stylesheet" href="../../resources/css/main__style.css?sd">
     <script
             src="https://kit.fontawesome.com/bb830b2dcb.js"
             crossorigin="anonymous"
@@ -37,7 +30,7 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> New Shit </div>
             <div class="product_list">
-                <c:forEach items="${firstList}" var="merchan" varStatus="status" begin="0" end="2">
+                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="2">
                     <div class="product__item">
                         <div class="product__pic">
                             <a href="" class="pic_anch">
@@ -47,7 +40,7 @@
                         <div class="product__info">
                             <div class="brand__info_save">
                                 <button class="brand-info">
-                                    <img src="..\resources\img\brand\<c:out value="${merchan.brandName}"/>.png" alt="" style="width:100%">
+                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
@@ -64,17 +57,17 @@
                 </c:forEach>
             </div>
             <div class="product_list">
-                <c:forEach items="${firstList}" var="merchan" varStatus="status" begin="3" end="5">
+                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="3" end="5">
                     <div class="product__item">
                         <div class="product__pic">
                             <a href="" class="pic_anch">
-                                <img src="..\resources\img\goods\<c:out value="${merchan.name}"/>.png" alt="" style="width: 80%;">
+                                <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
                         <div class="product__info">
                             <div class="brand__info_save">
                                 <button class="brand-info">
-                                    <img src="..\resources\img\brand\<c:out value="${merchan.brandName}"/>.png" alt="" style="width:100%">
+                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
@@ -167,6 +160,6 @@
         </div>
     </section>
 </div>
-<script src="../resources/js/slidesearch.js" ></script>
+<script src="../../resources/js/slidesearch.js" ></script>
 </body>
 </html>

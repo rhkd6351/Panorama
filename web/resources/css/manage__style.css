@@ -4,7 +4,7 @@
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #000000;
 }
 li {
   list-style: disc;
@@ -12,6 +12,12 @@ li {
 html, body{
   background-color: rgb(231, 230, 220);
   height: 100%;
+}
+th, td{
+  border-bottom: 1px solid black;
+}
+tr{
+  height: 30px;
 }
 
 /* header */
@@ -47,9 +53,13 @@ section{
 }
 .left-section-list{
   margin: 20px 0px 0px 30px;
+  color: white;
 }
 .left-section-list>li{
   margin-bottom: 40px;
+}
+.left-section-list>li>a{
+  color: white;
 }
 
 /* right section */
@@ -92,3 +102,20 @@ section{
   bottom: 20px; left: 50%;
   transform: translate(-50%);
 }
+
+.formbox>*{
+  position: absolute;
+  left: 150px;
+}
+.formbox>input[type=submit]{
+  position:unset;
+  
+  width: 50px;
+}
+.formbox{
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  border-radius: 30px;
+}
+

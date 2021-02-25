@@ -17,10 +17,10 @@
             <a href="/">PANORAMA</a>
         </h1>
     </div>
-    <div class="naver__right">
+    <div class="navbar__right">
         <ul class="site_links">
             <li class="site_links__li">
-                <a class="li__button">
+                <a class="li__button search">
                     <i class="fas fa-search"></i>
                 </a>
             </li>
@@ -36,7 +36,53 @@
             </li>
         </ul>
     </div>
+    <div class="navbar__menu">
+        <button class="menu__plus">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
 </header>
+
+<div class="menusmall" >
+
+    <header id="logo_bar">
+
+        <div class="navbar__center">
+            <h1 class="logo">
+                PANORAMA
+            </h1>
+        </div>
+
+        <div class="navbar__delete">
+            <button class="deletet">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+    <ul class="__navbar__ul__small">
+        <li class="ul__menu__small">
+            <a href="..\html\main.html" class="small_anchor">Home</a>
+        </li>
+        <li class="ul__menu__small"><a href="/" class="small_anchor">Catalog</a></li>
+        <li class="ul__menu__small"><a href="/" class="small_anchor">About us</a></li>
+        <li class="ul__menu__small">
+            <a class="small_anchor search2">
+                Search</i>
+            </a>
+        </li>
+        <li class="ul__menu__small">
+            <a class="small_anchor ">
+                Cart</i>
+            </a>
+        </li>
+        <li class="ul__menu__small">
+            <a class="small_anchor" href="..\html\login.html">
+                User
+            </a>
+        </li>
+
+    </ul>
+</div>
 <!--���� �˻�â ������ ������ �͵� �ߺ� ���ٻ��� -->
 <div class="searchplace">
     <div class="title">Search for Shit on our site

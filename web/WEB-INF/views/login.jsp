@@ -24,14 +24,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../resources/css/main__style.css">
-    <link rel="stylesheet" href="../resources/css/login__style.css">
+    <link rel="stylesheet" href="../../resources/css/main__style.css">
+    <link rel="stylesheet" href="../../resources/css/login__style.css">
     <script
             src="https://kit.fontawesome.com/bb830b2dcb.js"
             crossorigin="anonymous"
     ></script>
-    <script src="../resources/js/slidesearch.js" defer ></script>
-    <script src="../resources/js/loginmagic.js" defer></script>
+    <script src="../../resources/js/slidesearch.js" defer ></script>
+    <script src="../../resources/js/loginmagic.js" defer></script>
 </head>
 <body>
 

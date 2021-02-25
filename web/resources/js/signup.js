@@ -30,9 +30,9 @@ choice_enter.addEventListener("click",()=>{
 
 function allremove(){
     for(let i=0; i<choice_button.length;i++){
-        
-            choice_button[i].classList.remove("choiced_ver");
-        
+
+        choice_button[i].classList.remove("choiced_ver");
+
     }
 }
 
@@ -49,11 +49,11 @@ let text__password = undefined;
 
 let text__number = undefined;
 
-var pattern_num = /[0-9]/;	// ¼ýÀÚ 
+var pattern_num = /[0-9]/;	// Â¼Ã½Ã€Ãš
 
-var pattern_eng = /[a-zA-Z]/;	// ¹®ÀÚ 
+var pattern_eng = /[a-zA-Z]/;	// Â¹Â®Ã€Ãš
 
-var pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/; // Æ¯¼ö¹®ÀÚ
+var pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/; // Ã†Â¯Â¼Ã¶Â¹Â®Ã€Ãš
 
 var pattern_010=/[0][1][0]/;
 
@@ -104,15 +104,15 @@ function updatePass(e){
         password_error.dataset.error="0";
         input_error_checksita();
 
-    
+
     }else{
-    
-    
+
+
         password_border.style.borderColor='#f15746';
         password_error.style.opacity=1;
-        
 
-    
+
+
     }
 }
 
@@ -129,14 +129,14 @@ function updatePhone(e){
         number_border.style.borderColor='#ffffff';
         number_error.dataset.error="0";
         input_error_checksita();
-    
+
     }else{
-    
-    
+
+
         number_border.style.borderColor='#f15746';
         number_error.style.opacity=1;
 
-    
+
     }
 }
 
@@ -148,7 +148,7 @@ const input_date= document.querySelector(".input_error_date");
 
 function aram(){
     input_date.dataset.error="0";
-    
+
     input_error_checksita();
 
 
@@ -179,18 +179,17 @@ function input_error_checksita(){
         if(input_error[i].dataset.error==="0"){
             if(i===(input_error.length-1)){
                 check=true;
-                
+
             }
         }
         else{
             break;
         }
-    
+
     }
     if(check){
         submit_button.classList.remove("submit_button_notwork");
-        
-    }
-   
-}
 
+    }
+
+}

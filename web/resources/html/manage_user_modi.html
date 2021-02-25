@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage</title>
+    <link href="../css/manage__style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="page-wrapper">
+    </div>
+    <header>
+        <div class="main-logo">
+            <h1>Panorama Admin Page  &nbsp; LOGIN ID = "Yekwang"</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="left-section flt">
+            <ul class="left-section-list">
+                <li>회원 관리</li>
+                <li>상품 관리</li>
+                <li>브랜드 관리</li>
+                <li>로고 관리</li>
+            </ul>
+            <div class="footer-info">
+                waspy@naver.com<br/>
+                bsy17171@naver.com<br/>
+                Kyonggi_Univ
+            </div>
+        </div>
+
+        <div class="right-section flt">
+
+            <div class="right-section-nav">
+                <ul class="right-section-nav-element">
+                    <li>회원 조회</li>
+                    <li>셀러 요청</li>
+                </ul>
+            </div>
+
+            <div class="right-section-title">
+                <h1>회원 수정</h1>
+            </div>
+            <div class="right-section-box">
+                <form class="formbox" action="/manage/user/modifyUser" method="POST">
+                    User OID: <input type="text" value="123" disabled="true" class="formimp"/><br/><br/>
+                    User ID: <input type="text" value="123" disabled="true"/><br/><br/>
+                    User PW: <input type="text" value="123"/><br/><br/>
+                    User phone: <input type="text" value="123"/><br/><br/>
+                    User auth: <select name="auth">
+                        <option value="0">==선택==</option>
+                        <option value="0">admin</option>
+                        <option value="1">user</option>
+                        <option value="2">seller</option>
+                    </select> <br/><br/>
+                    User reg_date: <input type="text" value="123"/ disabled="true"><br/><br/>
+                    User name: <input type="text" value="123"/><br/><br/>
+                    User birth: <input type="date" value="1998-07-10"/><br/><br/>
+                    User gender: <select name="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select><br/><br/>
+
+                    <input type="submit">
+                </form>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

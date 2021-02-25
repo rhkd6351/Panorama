@@ -8,8 +8,8 @@ import java.util.Date;
 public class MerchanVO {
 
     private int merchanOid; //PK, auto increment
-    private int userOid;
-    private String brandName;
+    private String userId;
+    private int brandOid;
     private String sort;
     private String name;
     private String content;

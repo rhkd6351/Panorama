@@ -10,7 +10,7 @@ public interface UserMapper {
 
     public void insert(UserVO vo);
 
-    public int delete(int userOid);
+    public int delete(String userId);
 
     public int update(UserVO vo);
 

@@ -10,7 +10,7 @@ public interface UserService {
 
     public UserVO get(String userId);
 
-    public boolean remove(int oid);
+    public boolean remove(String userId);
 
     public boolean modify(UserVO vo);
 

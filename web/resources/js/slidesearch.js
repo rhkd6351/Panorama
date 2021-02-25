@@ -1,4 +1,3 @@
-
 /*search button transition left right haha that's mafuxxin funny*/
 
 const search_button = document.querySelector(".search");
@@ -48,9 +47,9 @@ hambug.addEventListener("click",()=>{
 
 
 search_delete.addEventListener("click",()=>{
-   
+
     menu_small.style.opacity=0;
-    
+
     setTimeout(() => {
         menu_small.style.display="none";
 

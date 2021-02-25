@@ -8,10 +8,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.zerock.domain.BrandVO;
 import org.zerock.domain.MerchanVO;
+import org.zerock.service.BrandService;
 import org.zerock.service.MerchanService;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
@@ -27,6 +30,7 @@ public class MainController {
     private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 
     private MerchanService merchanService;
+    private BrandService brandService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(Locale locale, Model model) {
@@ -41,8 +45,15 @@ public class MainController {
 
         List<MerchanVO> newlist = merchanService.getNewList();
         List<MerchanVO> logoList = merchanService.getLogoList();
+
         model.addAttribute("firstList",newlist);
         model.addAttribute("logoList",logoList);
+
+        List<BrandVO> firstBrandList =  new ArrayList();
+        for (MerchanVO vo: newlist)
+            firstBrandList.add(brandService.get(vo.getBrandOid()));
+
+        model.addAttribute("firstBrandList", firstBrandList);
 
         return "/main";
     }

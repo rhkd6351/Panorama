@@ -65,8 +65,8 @@ public class UserController {
     }
 
     @PostMapping("/remove")
-    public String delete(int oid, Model model){
-        if(service.remove(oid)){
+    public String delete(String userId, Model model){
+        if(service.remove(userId)){
             model.addAttribute("delete","success");
             return "redirect:/user/list";
         }else

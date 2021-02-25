@@ -21,8 +21,8 @@
 
         <div class="right-section-nav">
             <ul class="right-section-nav-element">
-                <li>회원 조회</li>
-                <li>셀러 요청</li>
+                <li><a href="/manage/user">회원 조회</a></li>
+                <li><a href="/manage/user/Request">셀러 요청</a></li>
             </ul>
         </div>
 
@@ -30,9 +30,9 @@
             <h1>회원 조회</h1>
         </div>
         <div class="right-section-box">
-            <table border="1px solid black">
+            <table style="background-color: white; text-align: center">
                 <thead>
-                <tr>
+                <tr style="background-color: khaki">
                     <th>userOid</th>
                     <th>userId</th>
                     <th>userPw</th>
@@ -58,8 +58,8 @@
                         <td><c:out value="${user.name}"/> </td>
                         <td><c:out value="${user.birth}"/> </td>
                         <td><c:out value="${user.gender}"/> </td>
-                        <td></td>
-                        <td></td>
+                        <td><a href="/manage/user/modify?userId=<c:out value="${user.userId}"/>">✓</a></td>
+                        <td><a href="/manage/user/delete?userId=<c:out value="${user.userId}"/>">✓</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>

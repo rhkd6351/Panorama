@@ -265,7 +265,7 @@ input::placeholder {
     color: rgb(255, 217, 0);
 }
 .deletet {
-    
+
     z-index: 999;
     font-size: 35px;
 
@@ -274,7 +274,7 @@ input::placeholder {
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
-    
+
     height: 100px;
 }
 .navbar__delete{

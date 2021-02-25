@@ -43,8 +43,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean remove(int oid) {
-        if(mapper.delete(oid) == 0){
+    public boolean remove(String userId) {
+        if(mapper.delete(userId) == 0){
             log.info("회원정보 제거에 실패하였습니다.");
             return false;
         }else {
