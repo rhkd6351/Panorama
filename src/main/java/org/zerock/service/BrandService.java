@@ -15,4 +15,6 @@ public interface BrandService {
     public boolean modify(BrandVO vo);
 
     public List<BrandVO> getList();
+
+    public List<BrandVO> getSpecList(String userId);
 }

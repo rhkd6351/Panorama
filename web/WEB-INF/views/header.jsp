@@ -76,7 +76,7 @@
             </a>
         </li>
         <li class="ul__menu__small">
-            <a class="small_anchor" href="..\html\login.html">
+            <a class="small_anchor" href="/user/loginCheck">
                 User
             </a>
         </li>

@@ -64,4 +64,10 @@ public class MerchanServiceImpl implements MerchanService{
         log.info("listing Logo Merchan...");
         return mapper.getLogoList();
     }
+
+    @Override
+    public List<MerchanVO> getNotLogoList() {
+        log.info("listing NotLogo Merchan...");
+        return mapper.getNotLogoList();
+    }
 }

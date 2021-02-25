@@ -30,7 +30,7 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> New Shit </div>
             <div class="product_list">
-                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="2">
+                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="3">
                     <div class="product__item">
                         <div class="product__pic">
                             <a href="" class="pic_anch">
@@ -40,7 +40,7 @@
                         <div class="product__info">
                             <div class="brand__info_save">
                                 <button class="brand-info">
-                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>.png" alt="" style="width:100%">
+                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>_logo.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
@@ -57,7 +57,7 @@
                 </c:forEach>
             </div>
             <div class="product_list">
-                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="3" end="5">
+                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="4" end="7">
                     <div class="product__item">
                         <div class="product__pic">
                             <a href="" class="pic_anch">
@@ -67,7 +67,7 @@
                         <div class="product__info">
                             <div class="brand__info_save">
                                 <button class="brand-info">
-                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>.png" alt="" style="width:100%">
+                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>_logo.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>

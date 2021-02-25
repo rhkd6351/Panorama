@@ -8,6 +8,8 @@ public interface BrandMapper {
 
     public List<BrandVO> getList();
 
+    public List<BrandVO> getSpecList(String userId);
+
     public void insert(BrandVO vo);
 
     public int delete(int brandOid);

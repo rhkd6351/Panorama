@@ -9,10 +9,12 @@ public class OrderVO {
 
     private int orderOid;
     private int merchanOid;
+    private String userId;
     private int count;
-    private int price;
     private Date orderDate;
     private String demand;
+    private String invoice;
+    private String state;
 
 
 }

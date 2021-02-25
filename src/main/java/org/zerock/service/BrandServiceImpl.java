@@ -52,4 +52,9 @@ public class BrandServiceImpl implements BrandService{
         log.info("listing brand...");
         return mapper.getList();
     }
+
+    @Override
+    public List<BrandVO> getSpecList(String userId) {
+        return mapper.getSpecList(userId);
+    }
 }

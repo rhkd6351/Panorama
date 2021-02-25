@@ -56,6 +56,15 @@ public class ManageController {
         return "/manage/manage_brand";
     }
 
+    @GetMapping("/logo")
+    public String listLogo(Model model){
+        List<MerchanVO> logoList = merchanSer.getLogoList();
+        List<MerchanVO> merchanList = merchanSer.getNotLogoList();
+        model.addAttribute("logoList",logoList);
+        model.addAttribute("merchanList",merchanList);
+        return "/manage/manage_logo";
+    }
+
     @GetMapping("/user/modify")
     public String modifyUser(Model model, String userId){
         UserVO vo = userSer.get(userId);
@@ -119,5 +128,20 @@ public class ManageController {
     public String deleteBrand(int brandOid){
         brandSer.remove(brandOid);
         return "<script>alert('delete success');location.href='/manage/brand';</script>";
+    }
+
+    @ResponseBody
+    @GetMapping("/logo/modify")
+    public String modifyLogo(int logoNum, int changeLogoOid){
+        List<MerchanVO> list = merchanSer.getLogoList();
+        MerchanVO  beforeVO = list.get(logoNum-1);
+        beforeVO.setLogo(0);
+        merchanSer.modify(beforeVO);
+
+        MerchanVO afterVO = merchanSer.get(changeLogoOid);
+        afterVO.setLogo(logoNum);
+        merchanSer.modify(afterVO);
+
+        return "<script>alert('modify success');location.href='/manage/logo';</script>";
     }
 }

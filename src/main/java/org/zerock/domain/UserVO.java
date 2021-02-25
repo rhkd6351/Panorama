@@ -14,6 +14,7 @@ public class UserVO {
     private String birth;
     private String gender;
     private int auth; // 0=ADMIN 1=USER 2=SELLER
+    private int point;
 
     private Date regDate;
 }

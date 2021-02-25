@@ -32,7 +32,7 @@
             <form class="formbox" action="/manage/merchan/modify" method="POST">
                 Merchan OID: <input name = "merchanOid" type="text" value="<c:out value='${merchan.merchanOid}'/>" readonly class="formimp"/><br/><br/>
                 User ID: <input readonly name = "userId" type="text" value="<c:out value='${merchan.userId}'/>"/><br/><br/>
-                Brand Oid: <input name = "brandName" type="text" value="<c:out value='${merchan.brandOid}'/>"/><br/><br/>
+                Brand Oid: <input name = "brandOid" type="text" value="<c:out value='${merchan.brandOid}'/>"/><br/><br/>
                 Sort: <input name = "sort" type="text" value="<c:out value='${merchan.sort}'/>"/><br/><br/>
                 name: <input name = "name" type="text" value="<c:out value='${merchan.name}'/>"/><br/><br/>
                 content: <input name = "content" type="text" value="<c:out value='${merchan.content}'/>"/><br/><br/>

@@ -10,15 +10,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import org.zerock.domain.BrandVO;
+import org.zerock.domain.OrderVO;
 import org.zerock.domain.UserVO;
-import org.zerock.service.UserService;
+import org.zerock.service.*;
 import org.springframework.ui.Model;
-import org.zerock.service.UserServiceImpl;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.List;
 
 @Log4j
@@ -26,7 +28,11 @@ import java.util.List;
 @RequestMapping("/user/*")
 @AllArgsConstructor
 public class UserController {
-    private UserService service;
+    private UserService usrService;
+    private BrandService brService;
+    private OrderService orService;
+    private MerchanService mrService;
+
     private HttpSession session;
 
     @GetMapping("/loginCheck")
@@ -37,12 +43,45 @@ public class UserController {
             return "/login";
         }
         else
-            return "/myInfo";
+            return "redirect:/user/myInfo";
+    }
+
+    @GetMapping("/myInfo")
+    public String myInfo(Model model){
+        UserVO loginVO = (UserVO)session.getAttribute("userInfo");
+        if(loginVO.getAuth() == 0){
+            return "/manage/user";
+        }else if(loginVO.getAuth() == 1){
+            return "/myInfo_user";
+        }else{
+            return "redirect:/user/myInfo/seller";
+        }
+    }
+
+    @GetMapping("/myInfo/seller")
+    public String sellerInfo(Model model){
+        UserVO loginVO = (UserVO)session.getAttribute("userInfo");
+        List<BrandVO> brList = brService.getSpecList(loginVO.getUserId());
+        List<OrderVO> orList = orService.getList();
+        ArrayList<OrderVO> myOrderList = new ArrayList();
+
+        int sum = 0;
+        for(OrderVO vo : orList){
+            if(mrService.get(vo.getMerchanOid()).getUserId().equals(loginVO.getUserId())){
+                myOrderList.add(vo);
+                sum += vo.getCount() * mrService.get(vo.getMerchanOid()).getPrice();
+            }
+        }
+
+        model.addAttribute("brList",brList);
+        model.addAttribute("myOrderList",myOrderList);
+        model.addAttribute("total",sum);
+        return "/myInfo_seller";
     }
 
     @GetMapping("/list")
     public void list(Model model){
-        List<UserVO> list = service.getList();
+        List<UserVO> list = usrService.getList();
         model.addAttribute("list",list);
 
         log.info(list);
@@ -57,7 +96,7 @@ public class UserController {
     @PostMapping("/register")
     public String register(Model model,UserVO vo){
         try{
-            service.register(vo);
+            usrService.register(vo);
         }catch(UserServiceImpl.FoolException e){
             return "<script>alert('duplicated id');history.back();</script>";
         }
@@ -66,7 +105,7 @@ public class UserController {
 
     @PostMapping("/remove")
     public String delete(String userId, Model model){
-        if(service.remove(userId)){
+        if(usrService.remove(userId)){
             model.addAttribute("delete","success");
             return "redirect:/user/list";
         }else
@@ -76,7 +115,7 @@ public class UserController {
 
     @PostMapping("modify")
     public String modify(UserVO vo, Model model){
-        if(service.modify(vo)){
+        if(usrService.modify(vo)){
             model.addAttribute("modify","success");
             return "redirect:/user/list";
         }else
@@ -86,14 +125,14 @@ public class UserController {
 
     @PostMapping("get")
     public void get(Model model, String userId){
-        UserVO vo = service.get(userId);
+        UserVO vo = usrService.get(userId);
         model.addAttribute("get", vo);
         log.info(vo);
     }
 
     @PostMapping("login")
     public String login(Model model, String userId, String userPw){
-        UserVO vo = service.login(userId,userPw);
+        UserVO vo = usrService.login(userId,userPw);
         if(vo != null){
             session.setAttribute("userInfo", vo);
             return "redirect:/";

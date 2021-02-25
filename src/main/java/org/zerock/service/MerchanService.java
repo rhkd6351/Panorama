@@ -20,4 +20,6 @@ public interface MerchanService {
 
     public List<MerchanVO> getLogoList();
 
+    public List<MerchanVO> getNotLogoList();
+
 }

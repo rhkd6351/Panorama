@@ -12,6 +12,8 @@ public interface MerchanMapper {
 
     public List<MerchanVO> getLogoList();
 
+    public List<MerchanVO> getNotLogoList();
+
     public void insert(MerchanVO vo);
 
     public int delete(int merchanOid);
