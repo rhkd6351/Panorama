@@ -1,0 +1,229 @@
+.seller__info {
+  margin-top: 140px;
+}
+.user__container {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  padding: 50px 90px 25px 90px;
+  column-gap: 30px;
+}
+
+.member__rank {
+  width: 125px;
+  height: 125px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  box-shadow: 0vw 0vw 30px rgb(170, 215, 255);
+}
+
+.member__info {
+  padding: 0 15px;
+}
+
+.fa-user-tie {
+  font-size: 60px;
+  color: white;
+}
+.user_info__member {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3vw;
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0vw 0vw 30px rgb(170, 215, 255);
+}
+
+.user_info__sales {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 3vw;
+  border: 3px solid white;
+  border-radius: 15px;
+  height: 10vw;
+  box-shadow: 0vw 0vw 30px rgb(170, 215, 255);
+}
+.user_pic {
+  display: flex;
+  flex-direction: row;
+}
+.user_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.info_rank,
+.info_point {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn_edit_profile {
+  border: 3px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 35px;
+}
+.position {
+  font-size: 25px;
+}
+.email {
+  margin-top: 5px;
+  opacity: 0.7;
+}
+.rank {
+  font-size: 20px;
+}
+.rank_info,
+.point_info {
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 10px;
+}
+.user_info__brand {
+  margin-top: 70px;
+}
+
+.mypage_logo {
+  font-family: "Lexend Mega", sans-serif;
+  color: white;
+  text-shadow: rgb(170, 215, 255) 0px 0 20px;
+  font-size: 25px;
+  margin: 0 0 40px;
+}
+.brand_list {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 14vw;
+  row-gap: 10px;
+  column-gap: 10px;
+  background-color: black;
+}
+
+.brand_title {
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+}
+.brand__gogo {
+  background-color: rgb(170, 215, 255);
+  width: 100%;
+  transition: all 300ms ease;
+}
+.brand__gogo:hover {
+  background-color: white;
+}
+.brand__logo {
+  width: 70%;
+}
+.brand_an {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.sales_info {
+  margin-top: 5px;
+  opacity: 0.7;
+  font-size: 16px;
+}
+.sales_one {
+  font-size: 25px;
+}
+.wishlist {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 30vw;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.product__item_wish {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 15vw 15vw;
+  height: 100%;
+}
+.product__wish_pic {
+  height: 100%;
+  background-color: rgb(170, 215, 255);
+  border-radius: 15px;
+}
+.ul_mypage {
+  color: white;
+  list-style: none;
+}
+.li_mypage {
+  margin-bottom: 5px;
+}
+.gobutton {
+  font-family: "Pangolin", cursive;
+  padding: 0;
+  font-size: 15px;
+  transition: all 300ms ease;
+}
+.gobutton:hover {
+  color: rgb(255, 217, 0);
+}
+@media screen and (max-width: 1200px) {
+    .sales_one {
+        font-size: 15px;
+      }
+}
+@media screen and (max-width: 980px) {
+  .user_info__member {
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr;
+
+    padding: 0;
+  }
+  .user_pic {
+    padding: 30px;
+  }
+
+  .user_info {
+    border-top: 3px solid white;
+  }
+  .sales_one {
+    font-size: 12px;
+  }
+  .sales_info {
+    font-size: 9px;
+  }
+  .mypage_logo {
+    font-size: 18px;
+  }
+  .gobutton {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .product__info {
+    display: none;
+  }
+  .product__item_wish {
+    grid-template-rows: 15vw;
+  }
+  .wishlist {
+    
+    grid-auto-rows: 15vw;
+   
+  }
+  .user__container {
+    grid-template-columns: 1fr;
+    padding: 50px 60px 25px 60px;
+  }
+  .container__menu{
+      display:none;
+  }
+  
+}
