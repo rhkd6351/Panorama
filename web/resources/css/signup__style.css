@@ -64,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .choice_enter {
@@ -100,5 +101,6 @@ label{
 .submit_button_notwork{
   opacity:0.5;
   pointer-events: none;
-  color:rgba(0, 0, 0, 0.5);
+  background-color: white;
+  color:black;
 }
