@@ -287,6 +287,10 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 }
+.pic_one{
+  filter: invert(100%)
+
+}
 @media screen and (max-width: 750px) {
   #navbar__dodo {
     display: flex;
