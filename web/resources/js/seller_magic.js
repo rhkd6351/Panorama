@@ -1,13 +1,43 @@
 const deletebuttons = document.querySelectorAll(".deleteone");
-console.log(deletebuttons);
+const deleteitembuttons = document.querySelectorAll(".delete_buttons");
+const delete_choice_layer= document.querySelector(".delete_layer");
 
 for(let i=0; i<deletebuttons.length;i++){
     deletebuttons[i].addEventListener("click",()=>{
-        deletebuttons[i].parentNode.parentNode.remove();
+
+
+        delete_choice_layer.style.display="block";
+        
+        beforecheck(deletebuttons[i]);
 
     })
 }
 
+
+function beforecheck(t){
+    for (let i=0; i<deleteitembuttons.length;i++){
+
+        deleteitembuttons[i].addEventListener("click",()=>{
+    
+            if(deleteitembuttons[i].dataset.input==="True"){
+                deleteitem(t);
+                delete_choice_layer.style.display="none";
+
+            }
+            else{
+                delete_choice_layer.style.display="none";
+            
+            }
+            
+    
+        })
+    }
+}
+
+
+function deleteitem(e){
+    e.parentNode.parentNode.remove();
+}
 
 var pattern_num =  /^[0-9]*$/;		// 숫자 
 var pattern_eng = /[a-zA-Z]/;	// 문자 
