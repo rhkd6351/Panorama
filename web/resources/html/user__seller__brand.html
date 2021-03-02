@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/main__style.css">
     <link rel="stylesheet" href="../css/user.css">
-    <link rel="stylesheet" href="../css/mybrand.css">
+    <link rel="stylesheet" href="../css/user__mybrand.css">
     <link rel="stylesheet" href="../css/signup__style.css">
 
 
@@ -208,6 +208,26 @@ crossorigin="anonymous"
             </div>
         </form>
     </div>
+    <div class="delete_layer">
+        <div class="choice_gender">
+            <header class="choice_header">
+                <h1 class="logo" style="font-size:35px; margin:0; color:black">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    CAUTION
+                </h1>
+            </header>
+            <div class="choice_contents">
+                <p style="text-align: center;">
+                    It is impossible to recover.<br>
+                    Do you really want to delete this item?
+                </p>
+            </div>
+            <div class="choice_enter_out">
+                <button class="delete_buttons" data-input="True">Yes</button>
+                <button class="delete_buttons" data-input="False">No</button>
+            </div>
+        </div>
+    </div>
     <div class="seller__info">
         <div class="user__container" >
                 <div class="container__menu">
@@ -216,13 +236,13 @@ crossorigin="anonymous"
                     </h1>
                     <ul class="ul_mypage">
                         <li class="li_mypage">
-                            <button class=" gobutton" data-sectiongo="brand">My Brand</button>
+                            <button class=" gobutton" data-sectiongo="brand">Brand Sales</button>
                         </li>
                         <li class="li_mypage">
-                            <button class=" gobutton " data-sectiongo="sales">Total Sales</button>
+                            <button class=" gobutton " data-sectiongo="Merchandise">Total Sales</button>
                         </li>
                         <li class="li_mypage">
-                            <button class=" gobutton" data-sectiongo="wish">Wish list</button>
+                            <button class=" gobutton" data-sectiongo="order">Order List</button>
                         </li>
                     </ul>
                 </div>
@@ -240,7 +260,23 @@ crossorigin="anonymous"
                         
 
                     </div>
-                    <div class="user_info__brand sales">
+                    <div class="user_info__brand ">
+                        <div class="brand_title">
+                            <strong  class="position" style="color:white">Brand Info</strong>
+                        </div>
+                        <div class="user_info__syokai" style="margin-top: 30px;">
+                            <div class="syokai_info">
+                                <p>
+                                    <strong>
+                                    Nike, Inc.
+                                    </strong>
+                                     is an American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user_info__brand brand">
                         <div class="brand_title">
                             <strong  class="position" style="color:white">Brand Sales</strong>
                         </div>
@@ -263,7 +299,7 @@ crossorigin="anonymous"
                         </div>  
                         </div>
                     </div>
-                    <div class="user_info__brand sales">
+                    <div class="user_info__brand Merchandise">
                         <div class="brand_list_title">
                             <strong  class="position" style="color:white">Merchandise List</strong>
                             <button  class="brand_list_edit">
@@ -272,116 +308,545 @@ crossorigin="anonymous"
                             </button>
 
                         </div>
-                        <div class="brand_list_one">
-                            <div class="one__shit">
-                                <div class="deleteshit">
-                                    <button class="deleteone">
-                                        <i class="fas fa-times" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="shit_pic">
-                                    <div class="pic_back">
-                                        <img src="..\img\goods\pngfind.com-jordan-shoe-png-5682385.png" alt="" style="width:50%;">
+                        <div class="brand_type">
+                            <div class="type__classfi makingcenter">
+                                <p style="font-size:1.5vw;color:black">Top</p>
+                            </div>
+                            <div class="brand_list_one">            
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="shit_info">
-                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                    </h3>
-                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="one__shit">
-                                <div class="deleteshit">
-                                    <button class="deleteone">
-                                        <i class="fas fa-times" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="shit_pic">
-                                    <div class="pic_back">
-                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="shit_info">
-                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                    </h3>
-                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="one__shit">
-                                <div class="deleteshit">
-                                    <button class="deleteone">
-                                        <i class="fas fa-times" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="shit_pic">
-                                    <div class="pic_back">
-                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="shit_info">
-                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                    </h3>
-                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
-                                    </h3>
-                                </div>
+    
                             </div>
-                            <div class="one__shit">
-                                <div class="deleteshit">
-                                    <button class="deleteone">
-                                        <i class="fas fa-times" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="shit_pic">
-                                    <div class="pic_back">
-                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                        </div>
+                        <div class="brand_type">
+                            <div class="type__classfi makingcenter">
+                                <p style="font-size:1.5vw;color:black">Pants</p>
+                            </div>
+                            <div class="brand_list_one">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="../img/goods/favpng_hoodie-gym-shorts-reebok-nike.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Hoodie Gym Shorts Reebok Nike
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$80
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="shit_info">
-                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                    </h3>
-                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="one__shit">
-                                <div class="deleteshit">
-                                    <button class="deleteone">
-                                        <i class="fas fa-times" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="shit_pic">
-                                    <div class="pic_back">
-                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="../img/goods/favpng_hoodie-gym-shorts-reebok-nike.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Hoodie Gym Shorts Reebok Nike
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$80
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="shit_info">
-                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                    </h3>
-                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="one__shit">
-                                <div class="deleteshit">
-                                    <button class="deleteone">
-                                        <i class="fas fa-times" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                                <div class="shit_pic">
-                                    <div class="pic_back">
-                                        <img src="..\img\goods\hoddie_1.png" alt="" style="width: 50%;">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="../img/goods/favpng_hoodie-gym-shorts-reebok-nike.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Hoodie Gym Shorts Reebok Nike
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$80
+                                        </h3>
                                     </div>
                                 </div>
-                                <div class="shit_info">
-                                    <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
-                                    </h3>
-                                    <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
-                                    </h3>
+    
+                            </div>
+                        </div>
+                        <div class="brand_type">
+                            <div class="type__classfi makingcenter">
+                                <p style="font-size:1.5vw;color:black">Shoes</p>
+                            </div>
+                            <div class="brand_list_one">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods\pngfind.com-jordan-shoe-png-5682385.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img/goods/pngfind.com-jordans-png-855488.png" alt="" style="width: 50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/pngkin.com_travis-scott-png_517022.png" alt="" style="width: 50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="brand_type">
+                            <div class="type__classfi makingcenter">
+                                <p style="font-size:1.5vw;color:black">Hat</p>
+                            </div>
+                            <div class="brand_list_one">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/favpng_nike-cap-hat-swoosh-clothing.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Cap Hat Swoosh
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/favpng_nike-cap-hat-swoosh-clothing.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Cap Hat Swoosh
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/favpng_nike-cap-hat-swoosh-clothing.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Cap Hat Swoosh
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/favpng_nike-cap-hat-swoosh-clothing.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Cap Hat Swoosh
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/favpng_nike-cap-hat-swoosh-clothing.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Cap Hat Swoosh
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/favpng_nike-cap-hat-swoosh-clothing.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Cap Hat Swoosh
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$253
+                                        </h3>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="brand_type">
+                            <div class="type__classfi makingcenter">
+                                <p style="font-size:1.5vw;color:black">Bag</p>
+                            </div>
+                            <div class="brand_list_one">
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/pngfind.com-nike-png-1825842.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Duffel Bag
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$93
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/hoddie_1.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Duffel Bag
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$93
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/pngfind.com-nike-png-1825842.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Duffel Bag
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$93
+                                        </h3>
+                                    </div>
+                                </div>
+                                <div class="one__shit">
+                                    <div class="deleteshit">
+                                        <button class="deleteone">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="shit_pic">
+                                        <div class="pic_back">
+                                            <img src="..\img\goods/NicePng_mlg-png_2645739.png" alt="" style="width:50%;">
+                                        </div>
+                                    </div>
+                                    <div class="shit_info">
+                                        <h3 class="thing__info" >Nike Duffel Bag
+                                        </h3>
+                                        <h3 class="__nedan" style="margin-top:1.2vw; font-size: 1.5vw;">$93
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user_info__brand order" style="margin-top: 35px;">
+                        <div class="brand_list_title" style="margin:0">
+                            <strong  class="position" style="color:white">Order List</strong>
+                            
 
+                        </div>
+                        <div class="order_list_menu">
+
+                        </div>
+                        <div class="order_list">
+                           
+                            <ul class="order_list__ones">
+                            
+                                <li class="order_list__one">
+                                    <div class="order_list__pic makingcenter">
+                                        <div class="list__pic__out makingcenter">
+                                            <img src="../img/goods/pngfind.com-jordan-shoe-png-5682385.png" alt="" class="pic__one">
+                                        </div>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                            <p class="order_list_itemtitle ">
+                                        
+                                                Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                            </p>
+                                            <h3 class="item__title">Name</h3>
+
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">1</p>
+                                        <h3 class="item__title">Quantity
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">20210301</p>
+                                        <h3 class="item__title">Date
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <a href="" class="seller_anc">
+                                            <p class="contents_fontsize">Mr.Lim</p>
+                                        </a>
+                                        <h3 class="item__title">User</h3>
+
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">L</p>
+                                        <h3 class="item__title">Size
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">254$</p>
+                                        <h3 class="item__title">Price
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">Not yet</p>
+                                        <h3 class="item__title">Track
+
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="order_list__one">
+                                    <div class="order_list__pic makingcenter">
+                                        <div class="list__pic__out makingcenter">
+                                            <img src="../img/goods/pngfind.com-jordan-shoe-png-5682385.png" alt="" class="pic__one">
+                                        </div>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                            <p class="order_list_itemtitle ">
+                                        
+                                                Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                            </p>
+                                            <h3 class="item__title">Name</h3>
+
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">1</p>
+                                        <h3 class="item__title">Quantity
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">20210301</p>
+                                        <h3 class="item__title">Date
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <a href="" class="seller_anc">
+                                            <p class="contents_fontsize">Mr.Lim</p>
+                                        </a>
+                                        <h3 class="item__title">User</h3>
+
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">L</p>
+                                        <h3 class="item__title">Size
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">254$</p>
+                                        <h3 class="item__title">Price
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">Not yet</p>
+                                        <h3 class="item__title">Track
+
+                                        </h3>
+                                    </div>
+                                </li>
+                                <li class="order_list__one">
+                                    <div class="order_list__pic makingcenter">
+                                        <div class="list__pic__out makingcenter">
+                                            <img src="../img/goods/pngfind.com-jordan-shoe-png-5682385.png" alt="" class="pic__one">
+                                        </div>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                            <p class="order_list_itemtitle ">
+                                        
+                                                Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                            </p>
+                                            <h3 class="item__title">Name</h3>
+
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">1</p>
+                                        <h3 class="item__title">Quantity
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">20210301</p>
+                                        <h3 class="item__title">Date
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <a href="" class="seller_anc">
+                                            <p class="contents_fontsize">Mr.Lim</p>
+                                        </a>
+                                        <h3 class="item__title">User</h3>
+
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">L</p>
+                                        <h3 class="item__title">Size
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">254$</p>
+                                        <h3 class="item__title">Price
+                                        </h3>
+                                    </div>
+                                    <div class="order_list__contents makingcenter_2">
+                                        <p class="contents_fontsize">Not yet</p>
+                                        <h3 class="item__title">Track
+
+                                        </h3>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
