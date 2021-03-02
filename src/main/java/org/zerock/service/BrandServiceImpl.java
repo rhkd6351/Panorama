@@ -54,7 +54,7 @@ public class BrandServiceImpl implements BrandService{
     }
 
     @Override
-    public List<BrandVO> getSpecList(String userId) {
-        return mapper.getSpecList(userId);
+    public List<BrandVO> getListAccordingToUserId(String userId) {
+        return mapper.getListAccordingToUserId(userId);
     }
 }

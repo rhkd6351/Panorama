@@ -1,5 +1,6 @@
 package org.zerock.mapper;
 
+import org.apache.ibatis.annotations.Param;
 import org.zerock.domain.MerchanVO;
 
 import java.util.List;
@@ -20,6 +21,11 @@ public interface MerchanMapper {
 
     public int update(MerchanVO vo);
 
+    public int updateUser(@Param("merchanOid")int merchanOid, @Param("userId")String userId);
+
+    public int updateBrand(@Param("merchanOid")int merchanOid, @Param("brandOid")int brandOid);
+
     public MerchanVO read(int merchanOid);
 
+    List<MerchanVO> getListAccordingToBrandOid(int brandOid);
 }

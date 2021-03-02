@@ -8,7 +8,7 @@ public interface BrandMapper {
 
     public List<BrandVO> getList();
 
-    public List<BrandVO> getSpecList(String userId);
+    public List<BrandVO> getListAccordingToUserId(String userId);
 
     public void insert(BrandVO vo);
 

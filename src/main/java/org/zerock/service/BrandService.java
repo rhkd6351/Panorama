@@ -16,5 +16,6 @@ public interface BrandService {
 
     public List<BrandVO> getList();
 
-    public List<BrandVO> getSpecList(String userId);
+    public List<BrandVO> getListAccordingToUserId(String userId);
+
 }

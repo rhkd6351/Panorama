@@ -10,8 +10,6 @@
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <%@ page import="org.zerock.domain.UserVO" %>
-<%@ page import="org.zerock.domain.OrderVO" %>
-<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,6 +56,9 @@
                 <li>
                     <button class=" gobutton ">Succesion</button>
                 </li>
+                <li>
+                    <button class=" gobutton "><a href="/user/logout">LogOut</a></button>
+                </li>
 
             </ul>
         </div>
@@ -70,7 +71,7 @@
                     <div class="member__info">
                         <strong  class="position" style="color:white"><%=((UserVO)session.getAttribute("userInfo")).getName()%></strong>
                         <p  class="email" style="color:white" ><%=((UserVO)session.getAttribute("userInfo")).getUserId()%></p>
-                        <a  href="/my/profile" class="btn_edit_profile" type="button"> Profile edit </a>
+                        <a  href="" class="btn_edit_profile" type="button"> Profile edit </a>
                     </div>
 
                 </div>
@@ -92,7 +93,7 @@
                 <div class="brand_list">
                     <c:forEach var="brand" items="${brList}">
                     <div class="brand__gogo">
-                        <a href="" style="height:100%" class="brand_an">
+                        <a href="/user/myInfo/brand?brandOid=<c:out value="${brand.brandOid}"/>" style="height:100%" class="brand_an">
                             <img src="../../resources/img/brand/<c:out value="${brand.name}"/>_logo.png" alt="" class="brand__logo">
                         </a>
                     </div>

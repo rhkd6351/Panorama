@@ -63,7 +63,7 @@
         <li class="ul__menu__small">
             <a href="..\html\main.html" class="small_anchor">Home</a>
         </li>
-        <li class="ul__menu__small"><a href="/" class="small_anchor">Catalog</a></li>
+        <li class="ul__menu__small"><a href="/" class="small_anchor">Logout</a></li>
         <li class="ul__menu__small"><a href="/" class="small_anchor">About us</a></li>
         <li class="ul__menu__small">
             <a class="small_anchor search2">
@@ -77,9 +77,16 @@
         </li>
         <li class="ul__menu__small">
             <a class="small_anchor" href="/user/loginCheck">
+                User2
+            </a>
+        </li>
+
+        <li class="ul__menu__small">
+            <a class="small_anchor" href="/user/loginCheck">
                 User
             </a>
         </li>
+
 
     </ul>
 </div>

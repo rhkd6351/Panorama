@@ -11,6 +11,10 @@
     <![CDATA[select * from tbl_order where user_id = #{userId}]]>
     </select>
 
+    <select id="getListAccordingToBrandOid" resultType="org.zerock.domain.OrderVO">
+    <![CDATA[select * from tbl_order where brand_oid = #{brandOid}]]>
+    </select>
+
     <insert id="insert">
         insert into tbl_order(order_oid, merchan_oid,user_id, count, order_date, demand, invoice, state)
         values(brand_seq.nextval, #{merchanOid},#{userId},#{orderDate},#{demand},#{invoice},#{state})

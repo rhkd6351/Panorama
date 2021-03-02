@@ -8,7 +8,7 @@
     <![CDATA[select * from tbl_brand ]]>
     </select>
 
-    <select id="getSpecList" resultType="org.zerock.domain.BrandVO">
+    <select id="getListAccordingToUserId" resultType="org.zerock.domain.BrandVO">
     <![CDATA[select * from tbl_brand where user_Id = #{userId}]]>
     </select>
 

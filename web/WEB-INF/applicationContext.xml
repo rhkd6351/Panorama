@@ -28,12 +28,11 @@
         <property name="mapperLocations" value="classpath:org.zerock.mapper/*.xml"/>
         <property name="configLocation" value="classpath:org.zerock.config/mybatis-config.xml"/>
     </bean>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver">
+    </bean>
 
     <mybatis-spring:scan base-package="org.zerock.mapper"/>
     <context:component-scan base-package="org.zerock.service"></context:component-scan>
 
-
-
-    
 </beans>
 

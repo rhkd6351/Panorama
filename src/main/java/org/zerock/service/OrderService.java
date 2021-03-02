@@ -17,4 +17,6 @@ public interface OrderService {
     public List<OrderVO> getList();
 
     public List<OrderVO> getListUser(String userId);
+
+    public List<OrderVO> getListAccordingToBrandOid(int brandOid);
 }

@@ -7,6 +7,7 @@
         <li><a href="/manage/merchan">상품 관리</a></li>
         <li><a href="/manage/brand">브랜드 관리</a></li>
         <li><a href="/manage/logo">로고 관리</a></li>
+        <li><a href="/user/logout">로그아웃</a></li>
     </ul>
     <div class="footer-info">
         waspy@naver.com<br/>

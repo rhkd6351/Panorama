@@ -59,4 +59,9 @@ public class OrderServiceImpl implements OrderService{
         return mapper.getListUser(userId);
     }
 
+    @Override
+    public List<OrderVO> getListAccordingToBrandOid(int brandOid) {
+        return mapper.getListAccordingToBrandOid(brandOid);
+    }
+
 }

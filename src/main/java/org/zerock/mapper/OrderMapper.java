@@ -16,4 +16,6 @@ public interface OrderMapper {
     public int update(OrderVO vo);
 
     public OrderVO read(int orderOid);
+
+    public List<OrderVO> getListAccordingToBrandOid(int brandOid);
 }

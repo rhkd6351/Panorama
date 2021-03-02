@@ -48,6 +48,24 @@ public class MerchanServiceImpl implements MerchanService{
     }
 
     @Override
+    public boolean modifyUser(int merchanOid, String userId) {
+        if(mapper.updateUser(merchanOid,userId) == 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    @Override
+    public boolean modifyBrand(int merchanOid, int brandOid) {
+        if(mapper.updateBrand(merchanOid,brandOid) == 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    @Override
     public List<MerchanVO> getList() {
         log.info("listing Merchan...");
         return mapper.getList();
@@ -69,5 +87,10 @@ public class MerchanServiceImpl implements MerchanService{
     public List<MerchanVO> getNotLogoList() {
         log.info("listing NotLogo Merchan...");
         return mapper.getNotLogoList();
+    }
+
+    @Override
+    public List<MerchanVO> getListAccordingToBrandOid(int brandOid) {
+        return mapper.getListAccordingToBrandOid(brandOid);
     }
 }
