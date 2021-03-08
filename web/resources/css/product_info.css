@@ -1,0 +1,303 @@
+.product__buy {
+  margin: 140px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buy__info {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-column-gap: 25px;
+  margin-top: 30px;
+}
+.pic__outside {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(170 215 255);
+  border-radius: 15px;
+}
+
+.makingcenter_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.makingcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title_ones {
+  font-size: 25px;
+  color: white;
+}
+
+.product_title {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.choice__pro {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px dashed rgba(255, 217, 0, 1);
+  border-style: dashed;
+}
+.nedan__pro {
+  margin-top: 20px;
+  background-color: white;
+}
+.save {
+  text-align: right;
+  font-size: 30px;
+}
+.info__fixed {
+  position: fixed;
+  width: 400px;
+}
+
+.choice__title {
+  margin: 0;
+  font-size: 20px;
+  color: rgba(255, 217, 0, 1);
+  display: flex;
+  justify-content: flex-end;
+}
+.choice__click {
+  display: flex;
+  align-items: center;
+}
+
+.msku-sel {
+  background: rgb(170 215 255);
+  width: 100%;
+  display: block;
+}
+.size__choice,
+.nedan__choice {
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  column-gap: 40px;
+  margin-bottom: 20px;
+}
+.qtyInput {
+  background: white;
+  font-size: 16px;
+  height: 20px;
+  text-align: center;
+  font-family: "Pangolin", cursive;
+}
+
+.og_nedan {
+  text-decoration: line-through;
+}
+
+.nedan__title {
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  color: #636363;
+}
+.nedan__info {
+  color: black;
+  margin: 0;
+  font-size: 20px;
+}
+.ms-orp {
+  text-decoration: line-through;
+  color: #333;
+}
+.ms-as-red {
+  color: #dd1e31;
+  font-weight: bold;
+}
+.actPanel {
+  color: white;
+  font-weight: 700;
+}
+
+.disabled2 {
+  padding: 0px 0px;
+  vertical-align: bottom;
+  font-family: "Pangolin", cursive;
+
+  text-decoration: none;
+  outline: none;
+  color: black;
+  margin: 0;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  height: 52px;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 217, 0, 1);
+}
+.submit_button_notwork2 {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: rgba(255, 217, 0, 1);
+  color: black;
+}
+.brand__info {
+  width: 825px;
+  background: rgb(170, 215, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 215, 255, 1) 50%,
+    rgba(255, 217, 0, 1) 82%
+  );
+}
+.logo__product {
+  width: 40px;
+}
+
+.width_relative {
+  width: 100%;
+}
+.grid5x {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+.heightpic {
+  height: 15.4vw;
+}
+.simular_info {
+  border-top: 1px dashed rgba(255, 217, 0, 1);
+
+  width: 92%;
+  margin-top: 10px;
+}
+.simular__title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.brandname {
+  color: rgba(255, 217, 0, 1);
+}
+.title__brand {
+  font-size: 20px;
+}
+.pic__real {
+  width: 100%;
+
+  height: 200px;
+  background-color: rgba(170, 215, 255, 1);
+  border-radius: 12px;
+}
+.item__brandandsave {
+  display: flex;
+  justify-content: space-between;
+}
+.item__pic {
+  width: 100%;
+}
+.product_item {
+  width: 200px;
+}
+.__product_name {
+  font-size: 15px;
+  color: white;
+  margin: 0;
+}
+.product_list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body {
+  overflow-x: hidden;
+}
+.pic__inside {
+  width: 80%;
+}
+@media screen and (max-width: 1450px) {
+  .let2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .let1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .product_list {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    width: 100%;
+    padding: 0 18px;
+    display: inline-block;
+  }
+  .__product_name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+
+    display: block;
+    width: 200px;
+  }
+  .product_item {
+    display: inline-block;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .buy__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand__info {
+    width: 100%;
+  }
+  .pic__outside {
+    width: 100%;
+
+    border-radius: 0px;
+  }
+  .pic__inside {
+    width: 50%;
+  }
+  .info__pic {
+    width: 100%;
+  }
+  .buy__info {
+    width: 100%;
+  }
+  .choice__pro {
+    border-style: none;
+  }
+  .size__choice,
+  .nedan__choice {
+    margin-bottom: 0;
+  }
+  .nedan__pro{
+      margin:0 50px;
+  }
+  .info__kotoba{
+      margin-top:10px;
+  }
+}
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        
+       
+
+    }
