@@ -1,0 +1,142 @@
+.brand__info {
+  display: grid;
+  grid-template-columns: 1.5fr 0.4fr;
+}
+
+.mybrand__logo {
+  width: 60%;
+}
+
+.logo_nation {
+  background-image: url("../img/goods/Us_flag_large_38_stars_realblack.png");
+  background-size: cover;
+}
+.brand__name {
+  color: White;
+  font-family: "Lexend Mega", sans-serif;
+  text-shadow: rgb(170 215 255) 0px 0 20px;
+  font-size: 6.5vw;
+  margin: 0 0 20px;
+}
+.brand__date {
+  color: White;
+  font-family: "Lexend Mega", sans-serif;
+  text-shadow: rgb(170 215 255) 0px 0 20px;
+  font-size: 1.5vw;
+  margin: 0px;
+}
+.brand_info_kotoba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.brand_list_title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 3px solid white;
+  margin-bottom:20px;
+}
+.brand_list_edit {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.brand_list_one {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 30vw;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.one__shit {
+  display: grid;
+  grid-template-rows: 0.1fr 1.2fr 1fr;
+  row-gap: 20px;
+
+}
+.pic_back {
+  background-color: rgb(170 215 255);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.deleteone{
+  font-size:1.5vw;
+}
+.deleteshit{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.plus_brand{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 16px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 1.3fr 5.5fr 1.3fr;
+
+}
+.input_ones{
+  border-bottom: 3px solid black;
+}
+.input_one{
+  border:none;
+  font-family: "Pangolin", cursive;
+
+}
+.input_file{
+  font-size:11px;
+  line-height: 0px;
+  height:100%;
+  margin-bottom: 5px;
+}
+
+.kinds_button{
+
+  color: rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 30px;
+  margin: 0px 10px;
+  transition: all 300ms ease;
+  font-family: "Pangolin", cursive;
+
+}
+.brand_enter{
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 120px;
+  height: 60px;
+  margin: 0px 10px;
+  transition: all 300ms ease;
+  opacity: 1;
+  color: white;
+  font-family: "Pangolin", cursive;
+  cursor:pointer;
+
+}
+
+.input_error{
+  opacity: 0 ;
+}
+
+.delete__choice_layer{
+  font-size:3vw;
+  position:absolute;
+  right:3vw;
+  color:black;
+}
