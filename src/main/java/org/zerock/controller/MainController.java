@@ -49,13 +49,16 @@ public class MainController {
         model.addAttribute("firstList",newlist);
         model.addAttribute("logoList",logoList);
 
+        newlist.removeIf(i -> i.getBrandOid() == 0);
         List<BrandVO> firstBrandList =  new ArrayList();
-        for (MerchanVO vo: newlist)
+        for(MerchanVO vo : newlist)
             firstBrandList.add(brandService.get(vo.getBrandOid()));
 
         model.addAttribute("firstBrandList", firstBrandList);
 
         return "/main";
     }
+
+
 
 }

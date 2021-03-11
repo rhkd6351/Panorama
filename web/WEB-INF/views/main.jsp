@@ -33,7 +33,7 @@
                 <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="3">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="" class="pic_anch">
+                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch">
                                 <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
@@ -60,7 +60,7 @@
                 <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="4" end="7">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="" class="pic_anch">
+                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch">
                                 <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
