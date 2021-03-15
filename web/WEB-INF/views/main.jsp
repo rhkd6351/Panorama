@@ -21,7 +21,7 @@
 <!--���� hearder �ߺ� ���ٻ��� !-->
 <%@include file="header.jsp" %>
 <div class="main">
-    <section id="content_login" class="main"style="margin-top:140px; padding:0 32px 32px 32px;">
+    <section id="content_login" class="main"style="margin-top:140px;">
         <div class="home_first">
             <img src="..\resources\img\goods\<c:out value="${logoList.get(0).name}"/>.png" alt="" style="width:30%" class="slide-one">
             <h1><c:out value="${logoList.get(0).name}"/> ($<c:out value="${logoList.get(0).price}"/>)</h1>
