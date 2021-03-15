@@ -222,6 +222,12 @@ body {
 .pic__inside {
   width: 80%;
 }
+.pic__set {
+  background-image: url("../img/goods/pngkin.com_travis-scott-png_517022.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 @media screen and (max-width: 1450px) {
   .let2 {
     display: none;
@@ -286,18 +292,12 @@ body {
   .nedan__choice {
     margin-bottom: 0;
   }
-  .nedan__pro{
-      margin:0 50px;
+  .nedan__pro {
+    margin: 0 50px;
   }
-  .info__kotoba{
-      margin-top:10px;
+  .info__kotoba {
+    margin-top: 10px;
   }
 }
-@media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-        
-       
-
-    }
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+}
