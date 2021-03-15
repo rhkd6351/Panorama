@@ -106,7 +106,7 @@
         </div>
     </div>
     <div class="logo__center">
-        <h1 class="logo" style="margin: 0; color:black ">
+        <h1 class="logo logochange" style="margin: 0; color:black ">
             PANORAMA
         </h1>
     </div>
