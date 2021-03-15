@@ -260,4 +260,10 @@
   .brand_type{
     margin-bottom:20px;
 }
+.__nedan{
+  margin-top:0;
+}
+.save {
+  font-size: 15px;
+}
 }

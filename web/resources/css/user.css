@@ -24,7 +24,8 @@
   padding: 0 15px;
 }
 
-.fa-user-tie {
+.fa-user-tie,
+.fa-user {
   font-size: 60px;
   color: white;
 }
@@ -175,9 +176,9 @@
   color: rgb(255, 217, 0);
 }
 @media screen and (max-width: 1200px) {
-    .sales_one {
-        font-size: 15px;
-      }
+  .sales_one {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 980px) {
   .user_info__member {
@@ -207,23 +208,16 @@
   }
 }
 @media screen and (max-width: 750px) {
-  .product__info {
-    display: none;
-  }
+  
   .product__item_wish {
     grid-template-rows: 15vw;
   }
-  .wishlist {
-    
-    grid-auto-rows: 15vw;
-   
-  }
+
   .user__container {
     grid-template-columns: 1fr;
     padding: 50px 60px 25px 60px;
   }
-  .container__menu{
-      display:none;
+  .container__menu {
+    display: none;
   }
-  
 }

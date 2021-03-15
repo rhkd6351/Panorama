@@ -240,7 +240,7 @@ body {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
   .product_list {
     overflow-y: scroll;
     overflow-x: scroll;
@@ -298,6 +298,4 @@ body {
   .info__kotoba {
     margin-top: 10px;
   }
-}
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
 }

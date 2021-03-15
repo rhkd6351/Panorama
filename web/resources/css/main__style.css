@@ -101,7 +101,7 @@ a {
 }
 
 .product__item {
-  width: 20.2vw;
+  width: 15vw;
   display: grid;
   grid-template-rows: 1fr 0.8fr;
 }
@@ -109,7 +109,7 @@ a {
   width: 100%;
   background-color: rgb(170, 215, 255);
   border-radius: 12px;
-  height: 20.2vw;
+  height: 15vw;
 }
 .product__info {
   padding: 2vh 0;
@@ -291,6 +291,12 @@ input::placeholder {
   filter: invert(100%)
 
 }
+.pic__set {
+  background-image: url("../img/goods/KakaoTalk_20210312_161904558.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 @media screen and (max-width: 750px) {
   #navbar__dodo {
     display: flex;
@@ -314,7 +320,7 @@ input::placeholder {
     font-size:20px;
   }
   .product__item {
-    width: 17.5vw;
+    width: 12.5vw;
     display: grid;
     grid-template-rows: 1fr 1.5fr;
 }
