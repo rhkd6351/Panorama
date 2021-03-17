@@ -33,7 +33,7 @@
                 <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="3">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch">
+                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch pic__set" style=" background-image: url('../img/goods/hoddie_1.png')">
                                 <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
@@ -56,33 +56,7 @@
                     </div>
                 </c:forEach>
             </div>
-            <div class="product_list">
-                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="4" end="7">
-                    <div class="product__item">
-                        <div class="product__pic">
-                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch">
-                                <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
-                            </a>
-                        </div>
-                        <div class="product__info">
-                            <div class="brand__info_save">
-                                <button class="brand-info">
-                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>_logo.png" alt="" style="width:100%">
-                                </button>
-                                <button href="" class="save">
-                                    <i class="far fa-bookmark"></i>
-                                </button>
-                            </div>
-                            <div class="thing__info_nedan">
-                                <h3 class="thing__info"><c:out value="${merchan.name}" />
-                                </h3>
-                                <h3 class="__nedan">$<c:out value="${merchan.price}"/>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </c:forEach>
-            </div>
+            
         </div>
     </section>
     <section id="twice plus">
@@ -94,26 +68,26 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> Popular Shit </div>
             <div class="product_list">
-                <c:forEach items="secondList" var="merchan">
+                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="3">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 80%;">
+                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch pic__set" style=" background-image: url('../img/goods/hoddie_1.png')">
+                                <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
                         <div class="product__info">
                             <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <button class="brand-info">
+                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>_logo.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
                                 </button>
                             </div>
                             <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                <h3 class="thing__info"><c:out value="${merchan.name}" />
                                 </h3>
-                                <h3 class="__nedan">$253
+                                <h3 class="__nedan">$<c:out value="${merchan.price}"/>
                                 </h3>
                             </div>
                         </div>
@@ -131,26 +105,26 @@
         <div class="shitone">
             <div class="title_category" data-v-b71614ae=""> Hope Shit </div>
             <div class="product_list">
-                <c:forEach items="fourthList" var="merchan">
+                <c:forEach items="${firstList}" var="merchan" varStatus="stat" begin="0" end="3">
                     <div class="product__item">
                         <div class="product__pic">
-                            <a href="" style="height:100%">
-                                <img src="..\resources\img\goods\hoddie_1.png" alt="" style="width: 100%;">
+                            <a href="/merchan/info?merchanOid=<c:out value='${merchan.merchanOid}'/>" class="pic_anch pic__set" style=" background-image: url('../img/goods/hoddie_1.png')">
+                                <img src="..\resources\img\goods\<c:out value="${merchan.name}" />.png" alt="" style="width: 80%;">
                             </a>
                         </div>
                         <div class="product__info">
                             <div class="brand__info_save">
-                                <button class="brand-info" >
-                                    <img src="..\resources\img\goods\pngkit_jumpman-logo-png_1434772.png" alt="" style="width:100%">
+                                <button class="brand-info">
+                                    <img src="..\resources\img\brand\<c:out value="${firstBrandList.get(stat.index).name}"/>_logo.png" alt="" style="width:100%">
                                 </button>
                                 <button href="" class="save">
                                     <i class="far fa-bookmark"></i>
                                 </button>
                             </div>
                             <div class="thing__info_nedan">
-                                <h3 class="thing__info">Travis Scott Jordan Cactus Jack Highest Hoodie Olive
+                                <h3 class="thing__info"><c:out value="${merchan.name}" />
                                 </h3>
-                                <h3 class="__nedan">$253
+                                <h3 class="__nedan">$<c:out value="${merchan.price}"/>
                                 </h3>
                             </div>
                         </div>
